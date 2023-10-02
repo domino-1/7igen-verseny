@@ -59,6 +59,108 @@ export async function getAllPostsWithSlug() {
   return data?.posts
 }
 
+export async function getPostListFromCategory(category) {
+  const data = await fetchAPI(`
+    query CatPostList {
+      posts(where: {categoryName: "${category}"}) {
+        edges {
+          node {
+            id
+            title
+            date
+            slug
+            excerpt
+          }
+        }
+      }
+    }
+  `)
+  return data?.posts
+}
+
+export async function getAllCatPosts(category) {
+  const data = await fetchAPI(`
+    query CatPosts {
+      posts(where: {categoryName: "${category}"}) {
+        edges {
+          node {
+            id
+            author {
+              node {
+                name
+              }
+            }
+            title
+            excerpt(format: RENDERED)
+            featuredImage {
+              node {
+                id
+                link
+              }
+            }
+            date
+            slug
+          }
+        }
+      }
+    }
+  `)
+  return data?.posts
+}
+
+export async function getAllHirPosts() {
+  const data = await fetchAPI(`
+    query HirPosts {
+      posts(where: {categoryName: "hirek"}) {
+        edges {
+          node {
+            id
+            author {
+              node {
+                name
+              }
+            }
+            title
+            excerpt(format: RENDERED)
+            featuredImage {
+              node {
+                id
+                link
+              }
+            }
+            date
+            slug
+          }
+        }
+      }
+    }
+  `)
+  return data?.posts
+}
+
+export async function getPost(slug) {
+  return getHirPost(slug); //TEMP
+}
+
+export async function getHirPost(slug) {
+  const data = await fetchAPI(`
+  query HirPost {
+    post(id: "${slug}", idType: SLUG) {
+      author {
+        node {
+          name
+        }
+      }
+      content
+      date
+      modified
+      title
+    }
+  }
+  `)
+  return data?.post
+}
+
 export async function getAllPostsForHome(preview) {
   const data = await fetchAPI(
     `

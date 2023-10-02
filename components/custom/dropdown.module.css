@@ -1,0 +1,76 @@
+.parent {
+    position: relative;
+}
+
+.trigger {
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    text-transform: inherit;
+}
+
+.trigger:hover {
+    cursor: pointer;
+}
+
+.trigger fa-xs {
+    margin-left: .5em;
+}
+
+.panel {
+    background-color: #333;
+    display: inline-grid;
+    grid-template-columns: 1fr 50%;
+    padding: 0.5em;
+    column-gap: .5rem;
+    z-index: 10;
+
+    font-size: 1rem;
+    text-transform: none;
+    font-weight: normal;
+
+    /* transition */
+    /*transition: opacity 150ms ease-in-out;
+    opacity: 1;*/
+}
+
+.panel p {
+    margin: 5px 0 0;
+}
+
+/*.panel[data-status='initial'],
+.panel[data-status='close'] {
+  opacity: 0 !important;
+}*/
+
+.panelMain {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    line-height: 1.2;
+}
+
+.panelMain > a {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+}
+
+.panelMain > a:hover {
+    background: #404040;
+}
+
+.panelAux {
+    padding-left: 1em;
+    border-left: 1px solid #232323;
+    text-wrap: wrap;
+}
+
+.description {
+    font-size: 14px;
+    color: #999;
+    line-height: 1;
+}

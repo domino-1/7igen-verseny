@@ -1,0 +1,44 @@
+div.topBar {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    height: 80px;
+    background: #2d2d2d;
+    padding: 0 24px;
+}
+
+div.topBar *:last-child {
+    justify-content: end;
+}
+
+div.topBar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.topBar > nav {
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+    font-weight: 600; 
+    font-size: 20px; 
+    text-transform: uppercase;
+}
+
+.topBar .logo {
+    height: 40px;
+}
+
+
+/** Minimal TopBar styles - used on landing pages **/
+
+div.topBarMinimal {
+    background-color: transparent;
+}
+
+div.topBarMinimal > .logo {
+    /*grid-column: 2;*/
+    justify-self: start;
+    display: flex;
+    justify-content: center;
+}

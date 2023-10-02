@@ -1,0 +1,295 @@
+:root {
+    --main-red: #f80000;
+    --main-yellow: #FCC231;
+    --second-red: #b70000
+}
+
+html {
+    scroll-behavior: smooth;
+    /*scrollbar-color: gray transparent;*/
+    scrollbar-width: thin;
+}
+
+body {
+    font-family: var(--font-jost, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif);
+    line-height: 1.5;
+    color: white;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-poppins, 'Gill Sans MT', Arial, 'Trebuchet MS', sans-serif);
+}
+
+h1 {
+    font-size: 32px;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin: 0;
+}
+
+main > h1:first-child {
+  margin: 1em 0 10px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    padding: 2.5em 1em 0.5em 1em;
+    color: black;
+    background-color: var(--main-red);
+    row-gap: 2.5em;
+}
+
+footer #footer-bottom {
+    grid-column: 1 / -1;
+    grid-row: 2;
+}
+
+footer .hex-button {
+    font-size: 12px;
+    padding: 0em 3.5em;
+    clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+    height: 2.4em;
+    color: black;
+}
+
+footer #footer-social {
+    display: flex;
+    align-items: center;
+    gap: .6em;
+    font-size: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer #projekt-infok, footer #tamogato-szervezetek {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    flex-direction: column;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+footer .tamogato-logok {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 4px;
+}
+
+/** == FULL BLEED LAYOUT == **/
+
+.bodyContent {
+    --gap: clamp(1rem, 6vw, 3rem);
+    --full: minmax(var(--gap), 1fr);
+    --content: min(50ch, 100% - var(--gap) * 2);
+    --popout: minmax(0, 2rem);
+    --feature: minmax(0, 10rem);
+  
+    display: grid;
+    grid-template-columns:
+      [full-start] var(--full)
+      [feature-start] var(--feature)
+      [popout-start] var(--popout)
+      [content-start] var(--content) [content-end]
+      var(--popout) [popout-end]
+      var(--feature) [feature-end]
+      var(--full) [full-end];
+
+      align-content: start  ;
+  }
+
+  .bodyContent > * {
+    grid-column: content;
+  }
+
+  .popout {
+    grid-column: popout;
+  }
+
+  .feature {
+    grid-column: feature;
+  }
+
+  .full {
+    grid-column: full;
+  }
+
+/**/
+
+/** == NEWS POST CARDS == **/
+
+.newsPost {
+    background: gray;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 4px;
+}
+
+.newsPost h3, .newsPost p {
+    margin: 0;
+}
+
+.newsCards a {
+    text-decoration: none;
+    color: black;
+}
+
+.newsCards {
+    grid-column: feature;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap; /* biztosan? igy most a legegyszerubb */
+}
+
+/**/
+
+.breadcrumbs {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--main-red, #f80000);
+    margin: 1.5rem 0 .5rem;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+}
+
+.hex-button {
+    clip-path: polygon(15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%, 0% 50%);
+    font-family: var(--font-jost);
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    background: var(--second-red);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em 2.5em;
+    height: 35px;
+    cursor: pointer;
+}
+
+/*div.topBar {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    height: 60px;
+    background: #2d2d2d;
+    padding: 0 24px;
+}
+
+div.topBar *:last-child {
+    justify-content: end;
+}
+
+div.topBar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.topBar > nav {
+    display: flex; 
+    align-items: center; 
+    gap: 16px; 
+    font-weight: 600; 
+    font-size: 20px; 
+    text-transform: uppercase;
+}*/
+
+hr.topLine {
+    height: 5px;
+    background: var(--main-red);
+    border: none;
+    margin: 0;
+}
+
+/** == FULL BLEED LAYOUT == **/
+
+.bodyContent {
+    --gap: clamp(1rem, 6vw, 3rem);
+    --full: minmax(var(--gap), 1fr);
+    --content: min(50ch, 100% - var(--gap) * 2);
+    --popout: minmax(0, 2rem);
+    --feature: minmax(0, 10rem);
+  
+    display: grid;
+    grid-template-columns:
+      [full-start] var(--full)
+      [feature-start] var(--feature)
+      [popout-start] var(--popout)
+      [content-start] var(--content) [content-end]
+      var(--popout) [popout-end]
+      var(--feature) [feature-end]
+      var(--full) [full-end];
+
+      align-content: start  ;
+  }
+
+  .bodyContent > * {
+    grid-column: content;
+  }
+
+  .popout {
+    grid-column: popout;
+  }
+
+  .feature {
+    grid-column: feature;
+  }
+
+  .full {
+    grid-column: full;
+  }
+
+  /**/
+
+  .grid-centered-row {
+    display:grid;
+    grid-template-columns: 1fr auto 1fr;
+  }
+
+  .grid-centered-row > :last-child {
+    justify-self: self-end;
+  }
+
+
+  /*.floating {
+    transition-property: opacity;
+  }
+  .floating[data-status='open'],
+  .floating[data-status='close'] {
+    transition-duration: 250ms;
+  }
+  .floating[data-status='initial'],
+  .floating[data-status='close'] {
+    opacity: 0;
+  }*/
+
+
+  h1.category-desc-page {
+    text-transform: capitalize;
+  }
+
+  .full-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    filter: brightness(60%);
+  }
