@@ -1,4 +1,4 @@
-import { getHirPost } from '../../../../lib/api';
+import { getHirPost, getCatSlugs } from '../../../../lib/api';
 import Link from 'next/link';
 import ParsedHtml from '../../../../components/custom/parsed-html';
 import Breadcrumbs from '../../../../components/custom/breadcrumbs';
