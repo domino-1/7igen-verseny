@@ -48,7 +48,7 @@ export default async function TopBar() {
 
     let kampanyrol = [];
 
-    /* {/*<ParsedHtml htmlString={page.excerpt} />*/} */
+    /* {/*<ParsedHtml htmlString={page.excerpt} />*/
 
     kampanyrolPostList.edges.map( page => {
         page = page.node;
