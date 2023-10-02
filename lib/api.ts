@@ -59,6 +59,19 @@ export async function getAllPostsWithSlug() {
   return data?.posts
 }
 
+export async function getCatSlugs(category) {
+  const data = await fetchAPI(`
+    query CatSlugs {
+      posts(where: {categoryName: "${category}"}) {
+        nodes {
+          slug
+        }
+      }
+    }
+  `)
+  return data?.posts.nodes
+}
+
 export async function getPostListFromCategory(category) {
   const data = await fetchAPI(`
     query CatPostList {
