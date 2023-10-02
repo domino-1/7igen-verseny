@@ -7,6 +7,23 @@ import Breadcrumbs from '../../../../components/custom/breadcrumbs';
 //import parse from 'html-react-parser';
 //import PostBody from '../../../../components/post-body'
 
+export async function generateStaticParams() {
+    let final = [];
+    const nepszavazasSlugs = await getCatSlugs("nepszavazasrol");
+    const kampanySlugs = await getCatSlugs("kampanyrol");
+
+    nepszavazasSlugs.map((elem) => {
+        final.push(elem);
+    });
+    kampanySlugs.map((elem) => {
+        final.push(elem);
+    });
+
+    return final.map((post) => ({
+        slug: post.slug,
+    }));
+}
+
 export default async function Page({ params }) {
     const content = await getHirPost(params.slug);
 
