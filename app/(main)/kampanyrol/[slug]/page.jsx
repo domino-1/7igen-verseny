@@ -8,18 +8,9 @@ import Breadcrumbs from '../../../../components/custom/breadcrumbs';
 //import PostBody from '../../../../components/post-body'
 
 export async function generateStaticParams() {
-    let final = [];
-    const nepszavazasSlugs = await getCatSlugs("nepszavazasrol");
-    const kampanySlugs = await getCatSlugs("kampanyrol");
+    const hirSlugs = await getCatSlugs("kampanyrol")/*.then((res) => res.json())*/;
 
-    nepszavazasSlugs.map((elem) => {
-        final.push(elem);
-    });
-    kampanySlugs.map((elem) => {
-        final.push(elem);
-    });
-
-    return final.map((post) => ({
+    return hirSlugs.map((post) => ({
         slug: post.slug,
     }));
 }
