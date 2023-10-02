@@ -1,10 +1,10 @@
-import ParsedHtml from "../../../components/custom/parsed-html";
+//import ParsedHtml from "../../../components/custom/parsed-html";
 import { getAllHirPosts } from "../../../lib/api";
 import Link from 'next/link'; 
 
-function hirWrapper(hirek) {
+/*function hirWrapper(hirek) {
     hirek.map
-}
+}*/
 
 function NewsPost({title, author, date, excerpt}) {
     const published = new Date(date);
@@ -13,7 +13,7 @@ function NewsPost({title, author, date, excerpt}) {
         <div className={'newsPost'} >
             <h3>{title}</h3>
             <p>By: {author} | {published.toDateString().slice(4)} </p>
-            <ParsedHtml htmlString={excerpt}></ParsedHtml>
+            <p>{excerpt}</p>
         </div>
     )
 }
