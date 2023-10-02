@@ -10,7 +10,7 @@ async function fetchAPI(query = '', { variables }: Record<string, any> = {}) {
   }
 
   // WPGraphQL Plugin must be enabled
-  const res = await fetch(API_URL, {
+  const res = await fetch(API_URL as string, {
     headers,
     method: 'POST',
     body: JSON.stringify({
