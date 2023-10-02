@@ -37,7 +37,7 @@ export default async function TopBar() {
         page = page.node;
         let item = {
             name: page.title,
-            description: {/*<ParsedHtml htmlString={page.excerpt} />*/}`${page.excerpt}`,
+            description: page.excerpt,
             target: "/nepszavazas/" + page.slug,
         };
         nepszavazasrol.push(item);
@@ -48,11 +48,13 @@ export default async function TopBar() {
 
     let kampanyrol = [];
 
+    /* {/*<ParsedHtml htmlString={page.excerpt} />*/} */
+
     kampanyrolPostList.edges.map( page => {
         page = page.node;
         let item = {
             name: page.title,
-            description: {/*<ParsedHtml htmlString={page.excerpt} />*/}`${page.excerpt}`,
+            description: page.excerpt,
             target: "/kampany/" + page.slug,
         };
         kampanyrol.push(item);
