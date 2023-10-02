@@ -10,7 +10,7 @@ export default function Home() {
           <Breadcrumbs link="aktivistaknak" category="Aktivistáknak"/>
           <h1>Regisztrálj a szavazásra!</h1>
           <p>Ha nem akarsz lemaradni a népszavazással kapcsolatos információkról és hírekről, regisztrálj a szavazásra! Értesülj minél hamarabb az időpontokról, a szavazás helyszíneiről és a legfrissebb történésekről! </p>
-          <RegisterForm />
+          {/*<RegisterForm />*/}
         </div>
 
         <img src="https://ahang.hu/wp-content/uploads/2023/09/slice2.jpg"></img>
