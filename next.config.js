@@ -16,7 +16,4 @@ module.exports = {
       "secure.gravatar.com",
     ],
   },
-  experimental: {
-    serverActions: true,
-  },
 };
