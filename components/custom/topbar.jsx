@@ -38,7 +38,7 @@ export default async function TopBar() {
         let item = {
             name: page.title,
             description: page.excerpt,
-            target: "/nepszavazas/" + page.slug,
+            target: "/nepszavazasrol/" + page.slug,
         };
         nepszavazasrol.push(item);
     })
@@ -55,7 +55,7 @@ export default async function TopBar() {
         let item = {
             name: page.title,
             description: page.excerpt,
-            target: "/kampany/" + page.slug,
+            target: "/kampanyrol/" + page.slug,
         };
         kampanyrol.push(item);
     })
@@ -65,8 +65,8 @@ export default async function TopBar() {
             {/*<HamburgerMenu />*/}
             <nav>
                 <Link className={styles.logo} href="/"><Image src={logoPic} width={40} height={40} /></Link>
-                <Dropdown title="A népszavazásról" items={nepszavazasrol}></Dropdown>
-                <Dropdown title="A kampányról" items={kampanyrol} rootTarget="/kampany/"></Dropdown>
+                <Dropdown title="A népszavazásról" items={nepszavazasrol} rootTarget="/nepszavazasrol/"></Dropdown>
+                <Dropdown title="A kampányról" items={kampanyrol} rootTarget="/kampanyrol/"></Dropdown>
                 <Link href="/hirek">Hírek</Link> {/*TODO remove test when done */}
                 <Dropdown title="Aktivistáknak" rootTarget="/aktivistaknak/"></Dropdown>
             </nav>
