@@ -37,7 +37,7 @@ export default async function TopBar() {
         page = page.node;
         let item = {
             name: page.title,
-            description: <ParsedHtml htmlString={page.excerpt} />,
+            description: {/*<ParsedHtml htmlString={page.excerpt} />*/}`${page.excerpt}`,
             target: "/nepszavazas/" + page.slug,
         };
         nepszavazasrol.push(item);
