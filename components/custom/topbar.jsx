@@ -6,6 +6,7 @@ import { getPostListFromCategory } from '../../lib/api';
 // import ParsedHtml from './parsed-html';
 import Image from 'next/image';
 import logoPic from '../../public/15-removebg-preview.png';
+import ParsedHtml from './parsed-html';
 
 
 // nepszavazasrol = [
@@ -37,7 +38,7 @@ export default async function TopBar() {
         page = page.node;
         let item = {
             name: page.title,
-            description: page.excerpt,
+            description: <ParsedHtml htmlString={page.excerpt} />,
             target: "/nepszavazasrol/" + page.slug,
         };
         nepszavazasrol.push(item);
@@ -54,7 +55,7 @@ export default async function TopBar() {
         page = page.node;
         let item = {
             name: page.title,
-            description: page.excerpt,
+            description: <ParsedHtml htmlString={page.excerpt} />,
             target: "/kampanyrol/" + page.slug,
         };
         kampanyrol.push(item);
