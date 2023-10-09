@@ -63,14 +63,14 @@ export default async function TopBar() {
     return (
         <div className={styles.topBar}>
             {/*<HamburgerMenu />*/}
-            <nav>
+            <nav className={styles.topBarStart}>
                 <Link className={styles.logo} href="/"><Image src={logoPic} width={40} height={40} /></Link>
                 <Dropdown title="A népszavazásról" items={nepszavazasrol} rootTarget="/nepszavazasrol/"></Dropdown>
                 <Dropdown title="A kampányról" items={kampanyrol} rootTarget="/kampanyrol/"></Dropdown>
                 <Link href="/hirek">Hírek</Link> {/*TODO remove test when done */}
                 <Dropdown title="Aktivistáknak" rootTarget="/aktivistaknak/"></Dropdown>
             </nav>
-            <nav>
+            <nav className={styles.topBarEnd}>
             <Link style={{color: 'var(--main-red)'}} href="/aktivista-jelentkezes">Jelentkezz Aktivistának!</Link>
                 <Link href='https://tamogass.ahang.hu/oktatas-nepszavazas?utm_source=7igen.hu' target='_blank'><button className="hex-button" >Támogatás</button></Link>
             </nav>

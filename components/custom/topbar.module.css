@@ -42,3 +42,24 @@ div.topBarMinimal > .logo {
     display: flex;
     justify-content: center;
 }
+
+
+@media screen and (max-width: 1000px) {
+    
+    nav.topBarStart {
+        justify-content: center;
+    }
+    
+    nav.topBarStart > *:not(.logo) {
+        display: none;
+    }
+
+    nav.topBarEnd {
+        display: none;
+    }
+
+    div.topBarMinimal {
+        background-color: rgba(48,48,48,80%);
+    }
+    
+}

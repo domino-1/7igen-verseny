@@ -72,3 +72,10 @@ div.landing-content {
 /*.breadcrumbs {
     color: var(--main-yellow);
 }*/
+
+@media screen and ( max-width: 1000px ) {
+    div.aktivista {
+        margin-bottom: 0;
+        padding-bottom: 2em;
+    }
+}
