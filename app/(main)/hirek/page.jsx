@@ -1,5 +1,6 @@
 //import ParsedHtml from "../../../components/custom/parsed-html";
 import { getAllHirPosts } from "../../../lib/api";
+import ParsedHtml from "../../../components/custom/parsed-html";
 import Link from 'next/link'; 
 
 /*function hirWrapper(hirek) {
@@ -13,7 +14,7 @@ function NewsPost({title, author, date, excerpt}) {
         <div className={'newsPost'} >
             <h3>{title}</h3>
             <p>By: {author} | {published.toDateString().slice(4)} </p>
-            <p>{excerpt}</p>
+            <p><ParsedHtml htmlString={excerpt} /></p>
         </div>
     )
 }
