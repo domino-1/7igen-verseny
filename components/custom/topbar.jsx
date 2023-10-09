@@ -6,6 +6,7 @@ import { getPostListFromCategory } from '../../lib/api';
 // import ParsedHtml from './parsed-html';
 import Image from 'next/image';
 import logoPic from '../../public/15-removebg-preview.png';
+import ParsedHtml from './parsed-html';
 
 
 // nepszavazasrol = [
