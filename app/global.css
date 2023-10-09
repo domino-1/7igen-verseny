@@ -293,3 +293,30 @@ hr.topLine {
     z-index: -10;
     filter: brightness(60%);
   }
+
+
+@media screen and ( max-width: 1000px ) {
+
+  footer {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+  }
+
+  footer #footer-bottom {
+    grid-row: 3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer #footer-legal {
+    grid-row: 2;
+    grid-column: 1 / -1;
+    padding-top: 1em;
+  }
+  
+
+}
