@@ -1,7 +1,7 @@
 :root {
     --main-red: #f80000;
     --main-yellow: #FCC231;
-    --second-red: #b70000
+    --second-red: #b70000;
 }
 
 html {
@@ -297,6 +297,40 @@ hr.topLine {
 
 @media screen and ( max-width: 1000px ) {
 
+  /** Fullbleed **/
+
+  .bodyContent {
+    --gap: clamp(1rem, 6vw, 3rem);
+    --full: minmax(var(--gap), 1fr);
+    --content: min(50ch, 100% - 40px);
+  
+    display: grid;
+    grid-template-columns:
+      [full-start] var(--full)
+      [content-start] var(--content) [content-end]
+      var(--full) [full-end];
+
+      align-content: start;
+  }
+
+  .bodyContent > * {
+    grid-column: content;
+  }
+
+  .popout {
+    grid-column: full;
+  }
+
+  .feature {
+    grid-column: full;
+  }
+
+  .full {
+    grid-column: full;
+  }
+
+  /** Footer **/
+
   footer {
     grid-template-columns: 1fr;
     justify-content: center;
@@ -317,6 +351,8 @@ hr.topLine {
     grid-column: 1 / -1;
     padding-top: 1em;
   }
+
+  /**/
   
 
 }

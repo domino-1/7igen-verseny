@@ -105,3 +105,20 @@
     margin: 4em 0 20px;
 
 }
+
+@media screen and ( max-width: 1000px ) {
+    
+    .mainPageContent {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .mainPageContent > .content {
+        max-width: min(50ch, 100% - 40px);
+    }
+
+}
