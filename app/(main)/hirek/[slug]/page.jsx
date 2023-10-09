@@ -1,6 +1,6 @@
 import { getHirPost, getCatSlugs } from '../../../../lib/api';
 import Link from 'next/link';
-//import ParsedHtml from '../../../../components/custom/parsed-html';
+import ParsedHtml from '../../../../components/custom/parsed-html';
 import Breadcrumbs from '../../../../components/custom/breadcrumbs';
 //import ParsedHtml from '~/components/custom/parsed-html';
 //import { sanitize, isSupported } from "isomorphic-dompurify";
@@ -27,7 +27,6 @@ export default async function Page({ params }) {
         <h1>{content.title}</h1>
         <p>By: {content.author.node.name} | {published.toDateString().slice(4)}</p>
         <br />
-        {/*<PostBody content={DOMPurify.sanitize(content.content)}></PostBody>*/}
-        <div>{/*<ParsedHtml htmlString={content.content} ></ParsedHtml>*/content.contet}</div>
+        <div>{<ParsedHtml htmlString={content.content} ></ParsedHtml>/*content.contet*/}</div>
     </>
 }
