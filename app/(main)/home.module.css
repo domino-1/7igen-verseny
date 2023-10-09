@@ -71,11 +71,13 @@
     transition: scale 150ms ease-in-out;
 }
 
-.hexButton:hover {
+.hexButton:hover, 
+.hexButton:focus {
     scale: 1.01;
 }
 
-.hexButton:hover + .backHex {
+.hexButton:hover + .backHex,
+.hexButton:focus + .backHex {
     scale: 1.02 1;
 }
 
@@ -103,5 +105,49 @@
     max-width: 50ch;
     justify-self: center;
     margin: 4em 0 20px;
+
+}
+
+@media screen and ( max-width: 1000px ) {
+    
+    .mainPageContent {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .mainPageContent > .content {
+        max-width: min(50ch, 100% - 40px);
+    }
+
+
+    /** Hex button **/
+
+    .mainButtonRow {
+        grid-template-columns: 1fr;
+    }
+
+    .mainButtonRow > a:not(.midButton) {
+        display: none;
+    }
+
+    .mainButtonRow .hexButton {
+        width: 100%;
+        clip-path: polygon(50% 0, 100% 8%, 100% 92%, 50% 100%, 0 92%, 0 8%);
+    }
+
+    .mainButtonRow .backHex {
+        height: 214%;
+        width: 95%;
+        clip-path: polygon(50% 0, 100% 7.8%, 100% 92.2%, 50% 100%, 0 92.2%, 0 7.8%);
+    }
+
+    .hexButton:hover + .backHex, 
+    .hexButton:focus + .backHex {
+        scale: 1 1.02;
+    }
 
 }
