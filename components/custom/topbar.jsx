@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from './topbar.module.css';
 import Dropdown from './dropdown'
 import { getPostListFromCategory } from '../../lib/api';
-//import ParsedHtml from './parsed-html';
+// import ParsedHtml from './parsed-html';
 import Image from 'next/image';
 import logoPic from '../../public/15-removebg-preview.png';
 
