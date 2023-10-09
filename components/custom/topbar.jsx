@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from './topbar.module.css';
 import Dropdown from './dropdown'
 import { getPostListFromCategory } from '../../lib/api';
-import ParsedHtml from './parsed-html';
+// import ParsedHtml from './parsed-html';
 import Image from 'next/image';
 import logoPic from '../../public/15-removebg-preview.png';
 
@@ -37,8 +37,8 @@ export default async function TopBar() {
         page = page.node;
         let item = {
             name: page.title,
-            description: <ParsedHtml htmlString={page.excerpt} />,
-            target: "/nepszavazas/" + page.slug,
+            description: page.excerpt,
+            target: "/nepszavazasrol/" + page.slug,
         };
         nepszavazasrol.push(item);
     })
@@ -48,12 +48,14 @@ export default async function TopBar() {
 
     let kampanyrol = [];
 
+    /* {/*<ParsedHtml htmlString={page.excerpt} />*/
+
     kampanyrolPostList.edges.map( page => {
         page = page.node;
         let item = {
             name: page.title,
-            description: <ParsedHtml htmlString={page.excerpt} />,
-            target: "/kampany/" + page.slug,
+            description: page.excerpt,
+            target: "/kampanyrol/" + page.slug,
         };
         kampanyrol.push(item);
     })
@@ -63,8 +65,8 @@ export default async function TopBar() {
             {/*<HamburgerMenu />*/}
             <nav>
                 <Link className={styles.logo} href="/"><Image src={logoPic} width={40} height={40} /></Link>
-                <Dropdown title="A népszavazásról" items={nepszavazasrol}></Dropdown>
-                <Dropdown title="A kampányról" items={kampanyrol} rootTarget="/kampany/"></Dropdown>
+                <Dropdown title="A népszavazásról" items={nepszavazasrol} rootTarget="/nepszavazasrol/"></Dropdown>
+                <Dropdown title="A kampányról" items={kampanyrol} rootTarget="/kampanyrol/"></Dropdown>
                 <Link href="/hirek">Hírek</Link> {/*TODO remove test when done */}
                 <Dropdown title="Aktivistáknak" rootTarget="/aktivistaknak/"></Dropdown>
             </nav>

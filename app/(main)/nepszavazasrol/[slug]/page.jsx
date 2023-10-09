@@ -21,11 +21,10 @@ export default async function Page({ params }) {
     const published = new Date(content.date);
 
     return <>
-        <Breadcrumbs link={params.category} category={params.category} />
+        <Breadcrumbs link="/nepszavatasrol/" category="A Népszavazásról" />
         <h1>{content.title}</h1>
         <p>By: {content.author.node.name} | {published.toDateString().slice(4)}</p>
         <br />
-        {/*<PostBody content={DOMPurify.sanitize(content.content)}></PostBody>*/}
-        <div><ParsedHtml htmlString={content.content} ></ParsedHtml></div>
+        <ParsedHtml htmlString={content.content}></ParsedHtml>
     </>
 }

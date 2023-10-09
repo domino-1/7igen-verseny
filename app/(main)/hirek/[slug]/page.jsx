@@ -27,7 +27,6 @@ export default async function Page({ params }) {
         <h1>{content.title}</h1>
         <p>By: {content.author.node.name} | {published.toDateString().slice(4)}</p>
         <br />
-        {/*<PostBody content={DOMPurify.sanitize(content.content)}></PostBody>*/}
-        <div><ParsedHtml htmlString={content.content} ></ParsedHtml></div>
+        <div><ParsedHtml htmlString={content.content} /></div>
     </>
 }
