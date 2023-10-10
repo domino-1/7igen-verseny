@@ -39,7 +39,7 @@ export default function Dropdown({ title, items, rootTarget }) {
     return (<>
         <button className={styles.trigger} ref={refs.setReference} {...getReferenceProps()}>
             { (items !== undefined && items.length > 0) ? title : <Link href={rootTarget}>{title}</Link> }
-            &nbsp;{ (items !== undefined && items.length > 0) ? <FontAwesomeIcon icon={faCaretDown} size="xs" /> : null }
+            &nbsp;{ (items !== undefined && items.length > 0) ? <FontAwesomeIcon icon={faCaretDown} className={("icon-" + rootTarget).toLowerCase().replaceAll('/', '')} size="xs" /> : null }
         </button>
         {(items !== undefined && items.length > 0) && isOpen && (
             <FloatingFocusManager context={context} modal={false}>

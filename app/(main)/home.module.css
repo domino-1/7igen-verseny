@@ -5,7 +5,7 @@
 
 .headerContainer > .headerImage {
     object-fit: cover;
-    filter: grayscale();
+    /*filter: grayscale();*/
     z-index: -1;
 }
 

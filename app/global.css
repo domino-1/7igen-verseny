@@ -23,7 +23,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-poppins, 'Gill Sans MT', Arial, 'Trebuchet MS', sans-serif);
-}
+    margin-top: 2em;
+  }
 
 h1 {
     font-size: 32px;
@@ -31,6 +32,14 @@ h1 {
     line-height: 1.2;
     margin: 0;
 }
+
+.nepszavazas {
+  color: var(--main-red);
+}
+
+.kampany {
+  color: var(--main-yellow);
+}*
 
 main > h1:first-child {
   margin: 1em 0 10px;
@@ -298,6 +307,22 @@ hr.topLine {
     filter: brightness(60%);
   }
 
+  footer #projekt-infok > div > a > img {
+    width: 80px;
+    height: 80px;
+
+    background-color: white;
+    border-radius: 15px;
+  }
+
+  /*.icon-nepszavazasrol {
+    color: var(--main-red);
+}
+
+.icon-kampanyrol {
+    color: var(--main-yellow);
+}*/
+
 
 @media screen and ( max-width: 1000px ) {
 
@@ -360,7 +385,7 @@ hr.topLine {
     padding-top: 1em;
   }
 
-  /** Aktivista jelentkezes **/
+  /**  **/
   
 
 }

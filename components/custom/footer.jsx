@@ -7,13 +7,16 @@ faConfig.autoAddCss = false
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faYoutube, faTiktok } from '@fortawesome/free-brands-svg-icons'
 import { faSquare } from '@fortawesome/free-solid-svg-icons'
+import Image from 'next/image';
+import ahangLogo from '../../public/ahang_logo.png';
+import edfLogo from '../../public/edf_logo.png';
 
 export default function Footer() {
     return (
         <footer>
             <div id="projekt-infok">
                 <h2>7IGEN Oktatási&nbsp;Népszavazás</h2>
-                <div>EDF logo | aHang logo</div>
+                <div><Link href="https://facebook.com/egysegesdiakfront"><Image src={edfLogo} alt="Egyseges Diakfront Logo" /></Link> <Link href="https://ahang.hu"><Image src={ahangLogo} alt="aHang Logo" /></Link></div>
             </div>
             <div id="tamogato-szervezetek">
                 <h3>Támogató szervezetek</h3>
