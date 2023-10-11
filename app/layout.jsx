@@ -33,6 +33,7 @@ const jost = Jost({
 export const metadata = {
   title: "Home",
   description: "7IGEN Oktatási Népszavazás",
+  
 };
 
 export default function RootLayout({

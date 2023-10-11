@@ -22,7 +22,7 @@
 
 .mainButtonRow .mainButton {
     height: 100%;
-    background: var(--main-red);
+    background: var(--main-yellow);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,10 +41,10 @@
 
 .mainButtonRow .hexButton {
     height: 200%;
-    width: 105%;
+    width: 107%;
     grid-row: 1;
     grid-column: 1;
-    background-color: #8F1606;
+    background-color: var(--main-red);
     clip-path: polygon(8% 0, 92% 0, 100% 50%, 92% 100%, 8% 100%, 0% 50%);
     transition: scale 150ms ease-in-out;
     z-index: 2;
@@ -63,11 +63,11 @@
 
 .mainButtonRow .backHex {
     height: 180%;
-    width: 109%;
+    width: 111%;
     grid-row: 1;
     grid-column: 1;
-    background-color: var(--main-yellow);
-    clip-path: polygon(7.8% 0, 92.2% 0, 100% 50%, 92.2% 100%, 7.8% 100%, 0% 50%);;
+    background-color: var(--black, black);
+    clip-path: polygon(7.8% 0, 92.2% 0, 100% 50%, 92.2% 100%, 7.8% 100%, 0% 50%);
     transition: scale 150ms ease-in-out;
 }
 

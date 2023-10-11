@@ -72,7 +72,7 @@ export default async function TopBar() {
                 {/*<Dropdown title="Aktivistáknak" rootTarget="/aktivistaknak/"></Dropdown>*/}
             </nav>
             <nav className={styles.topBarEnd}>
-            <Link style={{color: 'var(--main-red)'}} href="/aktivista-jelentkezes">Jelentkezz Aktivistának!</Link>
+            <Link style={{color: 'var(--main-yellow)'}} href="/aktivista-jelentkezes">Jelentkezz Aktivistának!</Link>
                 <Link href='https://tamogass.ahang.hu/oktatas-nepszavazas?utm_source=7igen.hu' target='_blank'><button className="hex-button" >Támogatás</button></Link>
             </nav>
         </div>    
