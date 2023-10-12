@@ -2,6 +2,7 @@
     --main-red: #f80000;
     --main-yellow: #FCC231;
     --second-red: #b70000;
+    --black: black;
 }
 
 html {
@@ -45,13 +46,15 @@ main > h1:first-child {
   margin: 1em 0 10px;
 }
 
+/** Footer **/
+
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr auto;
     padding: 2.5em 1em 0.5em 1em;
     color: black;
-    background-color: var(--main-red);
+    background-color: var(--main-yellow);
     row-gap: 2.5em;
 }
 
@@ -65,7 +68,8 @@ footer .hex-button {
     padding: 0em 3.5em;
     clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
     height: 2.4em;
-    color: black;
+    color: var(--main-yellow);
+    background-color: black;
 }
 
 footer #footer-social {
@@ -96,6 +100,14 @@ footer .tamogato-logok {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 4px;
+}
+
+footer #projekt-infok > div > a > img {
+  width: 80px;
+  height: 80px;
+
+  /*background-color: white;
+  border-radius: 15px;*/
 }
 
 /** == FULL BLEED LAYOUT == **/
@@ -186,8 +198,8 @@ footer .tamogato-logok {
     text-transform: uppercase;
     font-weight: 700;
     border: none;
-    background: var(--second-red);
-    color: white;
+    background: var(--white, white);
+    color: var(--main-red);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -305,14 +317,6 @@ hr.topLine {
     height: 100%;
     z-index: -10;
     filter: brightness(60%);
-  }
-
-  footer #projekt-infok > div > a > img {
-    width: 80px;
-    height: 80px;
-
-    background-color: white;
-    border-radius: 15px;
   }
 
   /*.icon-nepszavazasrol {
