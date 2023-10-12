@@ -5,16 +5,15 @@ import { config as faConfig } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 faConfig.autoAddCss = false;
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faBarsStaggered } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 
 import "./hamburger-menu.css";
 
-export default function HamburgerMenu() {
+export default function HamburgerMenu({ children }) {
     return (
-        <Menu customBurgerIcon={ <FontAwesomeIcon icon={faBars} /> }
-                customCrossIcon={ <FontAwesomeIcon icon={faBarsStaggered} /> } >
-            <div>Test1</div>
-            <div>Test2</div>
+        <Menu isOpen={false} className="hamburgerMenu" customBurgerIcon={ <FontAwesomeIcon icon={faBars} /> }
+                customCrossIcon={ <FontAwesomeIcon icon={faXmark} /> } >
+            {children}
         </Menu>
     )
 }

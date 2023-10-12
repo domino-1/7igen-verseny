@@ -1,10 +1,7 @@
 .bm-burger-button {
-  
     width: 36px;
     height: 30px;
-    left: 36px;
-
-    top: 36px;
+    position: relative;
   }
   
   .bm-burger-bars {
@@ -21,17 +18,15 @@
     width: 24px;
   }
   
-  .bm-cross {
-    background: #bdc3c7;
-  }
-  
   .bm-menu-wrap {
     position: fixed;
     height: 100%;
+    left: 0px;
+    top: 0px;
   }
   
   .bm-menu {
-    background: #373a47;
+    background: #2d2d2d;
     padding: 0.3rem 0.3rem 0;
     font-size: 1.15em;
   }
@@ -41,7 +36,6 @@
   }
   
   .bm-item-list {
-
     color: #b8b7ad;
     padding: 0.8em;
   }
@@ -52,9 +46,35 @@
   
   .bm-overlay {
     background: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
   }
 /* styling next link component so that will be a column list of links*/
   .bm-item-list a {
     display: flex;
     flex-direction: column;
+    margin: .5em 0 0;
+  }
+
+  .hamburgerMenu .childItem {
+    text-transform: none;
+    padding-left: 1em;
+  }
+
+  .hamburgerMenu .topLevelItem {
+    margin-top: 1em;
+  }
+
+  .hamburgerMenu .topLevelItem:first-of-type {
+    margin-top: 0;
+  }
+
+  .bm-item > div {
+    text-transform: none;
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  .bm-item > div > p {
+    margin: 0;
   }

@@ -393,3 +393,9 @@ hr.topLine {
   
 
 }
+
+@media screen and (min-width: 1001px) {
+  .mobile-only {
+    display: none;
+  }
+}

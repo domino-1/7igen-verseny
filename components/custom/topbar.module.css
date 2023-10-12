@@ -47,10 +47,10 @@ div.topBarMinimal > .logo {
 @media screen and (max-width: 1000px) {
     
     nav.topBarStart {
-        justify-content: center;
+        justify-content: space-between;
     }
     
-    nav.topBarStart > *:not(.logo) {
+    nav.topBarStart > button {
         display: none;
     }
 

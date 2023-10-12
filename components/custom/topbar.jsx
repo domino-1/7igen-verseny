@@ -7,6 +7,8 @@ import { getPostListFromCategory } from '../../lib/api';
 import Image from 'next/image';
 import logoPic from '../../public/15-removebg-preview.png';
 import ParsedHtml from './parsed-html';
+import HamburgerMenu from './hamburger-menu.jsx';
+import HamburgerItem from './hamburger-item';
 
 
 // nepszavazasrol = [
@@ -61,10 +63,24 @@ export default async function TopBar() {
         kampanyrol.push(item);
     })
 
+    let mobileMenuItems = [];
+    mobileMenuItems.push(<HamburgerItem target="/nepszavazasrol/" text="A Népszavazásról" className="topLevelItem" />);
+    nepszavazasrol.map( elem => (
+        mobileMenuItems.push(<HamburgerItem target={elem.target} text={elem.name} description={elem.description} className="childItem" />)
+    ));
+    mobileMenuItems.push(<HamburgerItem target="/kampanyrol/" text="A Kampányról" className="topLevelItem" />);
+    kampanyrol.map( elem => (
+        mobileMenuItems.push(<HamburgerItem target={elem.target} text={elem.name} description={elem.description} className="childItem" />)
+    ));
+
     return (
         <div className={styles.topBar}>
-            {/*<HamburgerMenu />*/}
             <nav className={styles.topBarStart}>
+                <div class="mobile-only">
+                    <HamburgerMenu>
+                        {mobileMenuItems}
+                    </HamburgerMenu>
+                </div>
                 <Link className={styles.logo} href="/"><Image src={logoPic} width={40} height={40} /></Link>
                 <Dropdown title="A népszavazásról" items={nepszavazasrol} rootTarget="/nepszavazasrol/"></Dropdown>
                 <Dropdown title="A kampányról" items={kampanyrol} rootTarget="/kampanyrol/"></Dropdown>
