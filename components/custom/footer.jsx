@@ -41,7 +41,7 @@ export default function Footer() {
                     <FontAwesomeIcon icon={faTiktok} />
                 </div>
                 <span id="footer-legal"><Link href="https://ahang.hu/7igen-adatvedelem/">Adatvédelmi nyilatkozat</Link><span> | © 2023 ⧼szervező⧽ | </span><Link href="#">Sütitájékozató</Link></span>
-                <Link href="#"><button className="hex-button" >Rólunk</button></Link>
+                <Link href="/rolunk"><button className="hex-button" >Rólunk</button></Link>
             </div>
         </footer>
   )

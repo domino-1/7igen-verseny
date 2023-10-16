@@ -60,6 +60,21 @@ export async function getAllPostsWithSlug() {
   return data?.posts
 }
 
+export async function getEvents(number) {
+  const data = await fetchAPI(`
+  query EventQuery {
+    events(first: ${number}) {
+      nodes {
+        eventDate
+        eventLink
+        title
+        slug
+      }
+    }
+  }`)
+  return data?.events
+}
+
 export async function getCatSlugs(category) {
   const data = await fetchAPI(`
     query CatSlugs {
