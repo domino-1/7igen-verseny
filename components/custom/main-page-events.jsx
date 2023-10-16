@@ -19,6 +19,7 @@ export default async function MainPageEvents() {
                     date={event.eventDate.substring(5).replace('-', '/')}
                     title={event.title} />)}
             </div>
+            <Link className={styles.bottomHex} href="/esemenyek"><button className={`${styles.hexButton} hex-button`} >További események</button></Link>
         </div>
     );
 }
