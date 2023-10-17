@@ -2,7 +2,6 @@ import styles from "./home.module.css";
 import Image from "next/image";
 import headerPic from "../../public/7igenHeader_highlights.png";
 import Link from "next/link";
-import EventItem from "../../components/custom/main-page-events";
 import MainPageEvents from "../../components/custom/main-page-events";
 
 export default function Home() {
