@@ -15,7 +15,7 @@ export default async function MainPageEvents() {
             <div className={styles.eventsRow}>
                 {events.nodes.map( event => <EventItem 
                     target={event.eventLink} //ehelyett lehet egy helyi event implementacio is de nincs nagyon ido
-                    city="Város"
+                    city={event.eventPlace}
                     date={event.eventDate.substring(5).replace('-', '/')}
                     title={event.title} />)}
             </div>

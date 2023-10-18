@@ -23,7 +23,7 @@
 .panel {
     background-color: #333;
     display: inline-grid;
-    grid-template-columns: 1fr 50%;
+    grid-template-columns: 200px;
     padding: 0.5em;
     column-gap: .5rem;
     z-index: 10;

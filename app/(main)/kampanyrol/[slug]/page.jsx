@@ -23,7 +23,7 @@ export default async function Page({ params }) {
     return <>
         <Breadcrumbs link="/kampanyrol/" category="A Kampányról" />
         <h1>{content.title}</h1>
-        <p>By: {content.author.node.name} | {published.toDateString().slice(4)}</p>
+        <p>{published.toDateString().slice(4)}</p>
         <br />
         <ParsedHtml htmlString={content.content}></ParsedHtml>
     </>

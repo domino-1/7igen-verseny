@@ -98,8 +98,14 @@ footer h2 {
 
 footer .tamogato-logok {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(8, 1fr);
     gap: 4px;
+}
+
+footer .tamogato-logok > div {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
 }
 
 footer #projekt-infok > div > a > img {

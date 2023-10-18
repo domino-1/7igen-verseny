@@ -31,7 +31,7 @@ const jost = Jost({
 })
 
 export const metadata = {
-  title: "Home",
+  title: "7IGEN",
   description: "7IGEN Oktatási Népszavazás",
   
 };
