@@ -14,6 +14,7 @@ import edfLogo from '../../public/edf_logo.png';
 export default function Footer() {
     return (
         <footer>
+            <link rel="stylesheet" href="https://ahangcdn.s3-eu-central-1.amazonaws.com/hetigen.css"></link>
             <div id="projekt-infok">
                 <h2>7IGEN Oktatási&nbsp;Népszavazás</h2>
                 <div><Link href="https://facebook.com/egysegesdiakfront"><Image src={edfLogo} alt="Egyseges Diakfront Logo" /></Link> <Link href="https://ahang.hu"><Image src={ahangLogo} alt="aHang Logo" /></Link></div>
@@ -44,6 +45,5 @@ export default function Footer() {
                 <Link href="/rolunk"><button className="hex-button" >Rólunk</button></Link>
             </div>
         </footer>
-        <link rel="stylesheet" href="https://ahangcdn.s3-eu-central-1.amazonaws.com/hetigen.css">
   )
 }
