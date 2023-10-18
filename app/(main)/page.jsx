@@ -33,91 +33,43 @@ export default function Home() {
         </Link>
       </div>
 
-      <div className={`${styles.mainPageContent} full`}>
-        <div className={styles.content}>
-          <div>
+      {/*<div className={`${styles.mainPageContent} full`}>
+        <div className={styles.content}>*/}
+          <section className={styles.textContent}>
             <h1>7IGEN ALTERNATÍV NÉPSZAVAZÁS AZ OKTATÁSRÓL</h1>
             <p>
-              Az oktatás sorsa az országunk jövője! Együtt, közösen a diákokkal,
-              pedagógusokkal, civilekkel és tenni akaró állampolgárokkal tovább
-              visszük a remény lángját! Tarts velünk te is!
+              Az oktatás sorsa az országunk jövője! <br />
+              Együtt, közösen a diákokkal, pedagógusokkal, civilekkel és tenni akaró állampolgárokkal továbbvisszük a remény lángját!
+              Tarts velünk te is! <br />
+              Vigyük sikerre Magyarország első alternatív népszavazását!
             </p>
             <p>
-              Valósítsuk meg Magyarország első alternatív népszavazását!
-              Csatlakozz aktivistának, regisztrálj a szavazáshoz, ismerd meg a
-              kérdéseket, és támogasd a megvalósítását!
-            </p>
-          </div>
-          <div>
-            <h2>
-              A <span className="nepszavazas">Népszavazás</span> és a{" "}
-              <span className="kampany">Kampány</span>
-            </h2>
-            <p>
-              Észrevehetteed, hogy ezen az oldalon két színt is használunk,
-              sárgát és pirosat. Két fő menüpont is van, egyik a népszavazásra,
-              másik pedig a kampányra mutat. Ez azért van, mert úgy gondoljuk,
-              hogy egy demokratikus népszavazásnál el kell vállnia egymástól
-              magának a népszavazásnak, és a kampánynak. Mivel ez egy alternatív
-              népszavazás, sajnos ez nem sikerült mindehol, de ahol tudjuk, ott
-              megpróbáljuk elválasztani a kettőt!
+              Jelentkezz segítőnek, szavazz a kérdésekre, és adományozz az alternatív népszavazásra!
             </p>
             <p>
-              Minden oldal tetején láthatsz egy színes csíkot, ennek az oldalnak
-              az esetén ezen az oldalon ez piros. Ahol a csík sárga, ott az
-              oldal a kampányra vonatkozik, ahol piros ott magára a
-              népszavazásra. Ugyan így működnek kissebb elemek is az oldalon.
-              Például rögtön itt a "Közelgő Kampány Események" dobozban a szöveg
-              sárga, mivel ez a kampányra vonatkozik. A legtöbb oldalon
-              próbáltunk csak az egyikről vagy a másikról beszélni, ahol meg
-              mindkét téma jelen van egy oldalon, ott ezekkel a színekkel
-              jelöltük!
+              Szavazz online vagy személyesen 7 kérdésben, ha elmúltál 16 éves és rendelkezel érvényes fényképes igazolvánnyal (személyi, útlevél, jogosítvány)!
             </p>
-          </div>
-        </div>
-        <MainPageEvents />
-        <div className={styles.content}>
-          <div>
-            <h1>7IGEN ALTERNATÍV NÉPSZAVAZÁS AZ OKTATÁSRÓL</h1>
+          </section>
+          <section className={styles.textContent}>
+            <h2>Hogyan tudok szavazni?</h2>
+            <h3>Szavazz online!</h3>
             <p>
-              Az oktatás sorsa az országunk jövője! Együtt, közösen a diákokkal,
-              pedagógusokkal, civilekkel és tenni akaró állampolgárokkal tovább
-              visszük a remény lángját! Tarts velünk te is!
+              Töltsd le az ELEVE applikációt, és szavazz online az ügyfélkapus azonosítód segítségével! <br />
+              Töltsd le ELEVE applikációt!
             </p>
+            <h3>Szavazz weboldalról!</h3>
             <p>
-              Valósítsuk meg Magyarország első alternatív népszavazását!
-              Csatlakozz aktivistának, regisztrálj a szavazáshoz, ismerd meg a
-              kérdéseket, és támogasd a megvalósítását!
+              Számítógépről is szavazhatsz az ügyfélkapus azonosítód segítségével: <br />
+              <Link href="#">Gépről szavazok!</Link>
             </p>
-          </div>
-          <div>
-            <h2>
-              A <span className="nepszavazas">Népszavazás</span> és a{" "}
-              <span className="kampany">Kampány</span>
-            </h2>
+            <h3>Szavazz személyesen!</h3>
             <p>
-              Észrevehetteed, hogy ezen az oldalon két színt is használunk,
-              sárgát és pirosat. Két fő menüpont is van, egyik a népszavazásra,
-              másik pedig a kampányra mutat. Ez azért van, mert úgy gondoljuk,
-              hogy egy demokratikus népszavazásnál el kell vállnia egymástól
-              magának a népszavazásnak, és a kampánynak. Mivel ez egy alternatív
-              népszavazás, sajnos ez nem sikerült mindehol, de ahol tudjuk, ott
-              megpróbáljuk elválasztani a kettőt!
+              Személyesen pedig az ország számos pontján leadhatod szavazataidat.
             </p>
-            <p>
-              Minden oldal tetején láthatsz egy színes csíkot, ennek az oldalnak
-              az esetén ezen az oldalon ez piros. Ahol a csík sárga, ott az
-              oldal a kampányra vonatkozik, ahol piros ott magára a
-              népszavazásra. Ugyan így működnek kissebb elemek is az oldalon.
-              Például rögtön itt a "Közelgő Kampány Események" dobozban a szöveg
-              sárga, mivel ez a kampányra vonatkozik. A legtöbb oldalon
-              próbáltunk csak az egyikről vagy a másikról beszélni, ahol meg
-              mindkét téma jelen van egy oldalon, ott ezekkel a színekkel
-              jelöltük!
-            </p>
-          </div>
-        </div>
-      </div>
+          </section>
+          <MainPageEvents />
+        {/*/div>
+      </div>*/}
     </>
   );
 }

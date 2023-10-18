@@ -20,6 +20,7 @@ div.eventItem {
     row-gap: .5em;
     box-sizing: content-box;
     border-bottom: 2px solid #444;
+    position: relative;
 }
 
 .eventItem > div.city {
@@ -52,6 +53,13 @@ div.eventItem {
     align-items: center;
 }
 
+.eventItem .iconExternalLink {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    opacity: .5;
+}
+
 div.eventContainer {
     grid-column: 1 / -1;
     display: flex;
@@ -59,6 +67,8 @@ div.eventContainer {
     row-gap: 1rem;
     padding: 1rem;
     background: #2d2d2d;
+    margin-top: 1em;
+    margin-bottom: -50px;
 }
 
 div.eventContainer > div.eventsRow {

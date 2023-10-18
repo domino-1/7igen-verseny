@@ -1,5 +1,10 @@
 import styles from './event.module.css';
 import Link from 'next/link';
+import { config as faConfig } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+faConfig.autoAddCss = false
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
 export default function EventItem({target, city, date, title}) {
     
@@ -21,6 +26,7 @@ export default function EventItem({target, city, date, title}) {
                     <div className={styles.city}>{city}</div>
                     <div className={styles.date}>{date}</div>
                     <div className={styles.title}>{title}</div>
+                    { target.includes("https://") ? <FontAwesomeIcon className={styles.iconExternalLink} size="xs" icon={faArrowUpRightFromSquare} /> : <></>}
                 </div>
             </Link>
         );

@@ -73,4 +73,6 @@
     font-size: 14px;
     color: #999;
     line-height: 1;
+    max-height: 34px;
+    overflow: hidden;
 }

@@ -20,15 +20,17 @@ export default async function Page({ params }) {
     return <>
         <Breadcrumbs link="/kampanyrol/" category="A Kampányról" />
         <h1>{content.title}</h1>
-        <p>{published}</p>
+        <p className="updated-date">{published}</p>
         <br />
         <ParsedHtml htmlString={content.content}></ParsedHtml>
         <br />
         <h2>Közelgő események</h2>
-        { futureEvents.nodes.map( event => <EventItem 
+        <section className="events-list">
+        { futureEvents.nodes.map( event => <EventItem key={event.slug}
                     target={event.eventLink} //ehelyett lehet egy helyi event implementacio is de nincs nagyon ido
                     city={event.eventPlace}
                     date={event.eventDate.substring(5).replace('-', '/')}
                     title={event.title} />) }
+        </section>
     </>
 }
