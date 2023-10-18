@@ -22,26 +22,31 @@ export default function Footer() {
             <div id="tamogato-szervezetek">
                 <h3>Támogató szervezetek</h3>
                 <div className="tamogato-logok">
-                    <FontAwesomeIcon icon={faSquare} size="2x" />
-                    <FontAwesomeIcon icon={faSquare} size="2x" />
-                    <FontAwesomeIcon icon={faSquare} size="2x" />
-                    <FontAwesomeIcon icon={faSquare} size="2x" />
-                    <FontAwesomeIcon icon={faSquare} size="2x" />
-                    <FontAwesomeIcon icon={faSquare} size="2x" />
-                    <FontAwesomeIcon icon={faSquare} size="2x" />
-                    <FontAwesomeIcon icon={faSquare} size="2x" />
-                    <FontAwesomeIcon icon={faSquare} size="2x" />
-                    <FontAwesomeIcon icon={faSquare} size="2x" />
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </div>
             </div>
             <div id="footer-bottom" className="grid-centered-row">
                 <div id="footer-social">
-                    <FontAwesomeIcon icon={faFacebook} />
-                    <FontAwesomeIcon icon={faInstagram} />
-                    <FontAwesomeIcon icon={faYoutube} />
-                    <FontAwesomeIcon icon={faTiktok} />
+                    <Link href="https://facebook.com/7igenesnepszavazas"><FontAwesomeIcon icon={faFacebook} /></Link>
+                    <Link href="https://www.instagram.com/explore/tags/7igen" ><FontAwesomeIcon icon={faInstagram} /></Link>
+                    <Link href="https://youtube.com/aHangvideo"><FontAwesomeIcon icon={faYoutube} /></Link>
                 </div>
-                <span id="footer-legal"><Link href="https://ahang.hu/7igen-adatvedelem/">Adatvédelmi nyilatkozat</Link><span> | © 2023 ⧼szervező⧽ | </span><Link href="#">Sütitájékozató</Link></span>
+                <span id="footer-legal"><Link href="https://ahang.hu/7igen-adatvedelem/">Adatvédelmi nyilatkozat</Link><span> | © 2023 | </span><Link href="/sutitajekoztato">Sütitájékozató</Link></span>
                 <Link href="/rolunk"><button className="hex-button" >Rólunk</button></Link>
             </div>
         </footer>

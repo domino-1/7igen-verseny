@@ -13,7 +13,7 @@ function NewsPost({title, author, date, excerpt}) {
     return (
         <div className={'newsPost'} >
             <h3>{title}</h3>
-            <p>By: {author} | {published.toDateString().slice(4)} </p>
+            <p>{published.toDateString().slice(4)} </p>
             <p><ParsedHtml htmlString={excerpt} /></p>
         </div>
     )

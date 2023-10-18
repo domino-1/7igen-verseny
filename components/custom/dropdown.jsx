@@ -53,9 +53,9 @@ export default function Dropdown({ title, items, rootTarget }) {
                         return <DropdownItem target={item.target} name={item.name} description={item.description} />
                     })}
                 </div>
-                <div className={styles.panelAux}>
+                {/*<div className={styles.panelAux}>
                     <span>Lorem ipsum dolor sit amer consequitor</span>
-                </div>
+                </div>*/}
             </div>
             </FloatingFocusManager>
         )}

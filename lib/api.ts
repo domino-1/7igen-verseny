@@ -67,6 +67,7 @@ export async function getEvents(number) {
       nodes {
         eventDate
         eventLink
+        eventPlace
         title
         slug
       }
