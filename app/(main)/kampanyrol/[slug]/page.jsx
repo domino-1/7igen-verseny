@@ -18,12 +18,12 @@ export async function generateStaticParams() {
 export default async function Page({ params }) {
     const content = await getHirPost(params.slug);
 
-    const published = new Date(content.date);
+    const published = new Intl.DateTimeFormat('hu-HU').format( new Date(content.modified) );
 
     return <>
         <Breadcrumbs link="/kampanyrol/" category="A Kampányról" />
         <h1>{content.title}</h1>
-        <p>{published.toDateString().slice(4)}</p>
+        <p>{published}</p>
         <br />
         <ParsedHtml htmlString={content.content}></ParsedHtml>
     </>

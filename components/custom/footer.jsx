@@ -46,7 +46,7 @@ export default function Footer() {
                     <Link href="https://www.instagram.com/explore/tags/7igen" ><FontAwesomeIcon icon={faInstagram} /></Link>
                     <Link href="https://youtube.com/aHangvideo"><FontAwesomeIcon icon={faYoutube} /></Link>
                 </div>
-                <span id="footer-legal"><Link href="https://ahang.hu/7igen-adatvedelem/">Adatvédelmi nyilatkozat</Link><span> | © 2023 ⧼szervező⧽ | </span><Link href="#">Sütitájékozató</Link></span>
+                <span id="footer-legal"><Link href="https://ahang.hu/7igen-adatvedelem/">Adatvédelmi nyilatkozat</Link><span> | © 2023 | </span><Link href="/sutitajekoztato">Sütitájékozató</Link></span>
                 <Link href="/rolunk"><button className="hex-button" >Rólunk</button></Link>
             </div>
         </footer>
