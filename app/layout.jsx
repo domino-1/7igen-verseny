@@ -96,7 +96,7 @@ export default function RootLayout({
         </noscript>
         <hr className="topLine"></hr>
           {/*<Script strategy="afterInteractive" id="CookieDeclaration" src="https://consent.cookiebot.com/120f133b-ab95-4207-ae7b-77f00844e91d/cd.js" type="text/javascript" async></Script>*/}
-          <CookieDeclaration />
+          <Suspense><CookieDeclaration /></Suspense>
           {children}
         <Footer />
       </body>
