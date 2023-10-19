@@ -22,9 +22,7 @@ export default function Home() {
         </Link>
         <Link href="/regisztralj/" className={styles.midButton}>
           <div className={styles.hexButton}>
-            Regisztrálj
-            <br />
-            szavazni!
+            Szavazz!
           </div>
           <div className={styles.backHex}></div>
         </Link>
@@ -52,19 +50,34 @@ export default function Home() {
           </section>
           <section className={styles.textContent}>
             <h2>Hogyan tudok szavazni?</h2>
-            <h3>Szavazz online!</h3>
+            <h3>Szavazz mobileszközön!</h3>
+            <p>(Ügyfélkapus azonosítás szükséges!)</p>
             <p>
-              Töltsd le az ELEVE applikációt, és szavazz online az ügyfélkapus azonosítód segítségével! <br />
-              Töltsd le ELEVE applikációt!
+              Töltsd le az ELEVE applikációt, és szavazz online! <br />
+              <Link href="https://apps.apple.com/us/app/eleve/id1539390605" target="_blank" id="appStore" rel="noopener">
+              <Image style={{height: 80 + 'px'}} src="https://ahangcdn.s3-eu-central-1.amazonaws.com/hetigen/apple.png" />
+              <span style={{display: 'block'}}>Almás készülékem van irány az App Store!</span>
+              </Link>
+              <Link href="https://play.google.com/store/apps/details?id=hu.ahang.eleve&pli=1" target="_blank" id="playStore" rel="noopener">
+              <Image style={{height: 80 + 'px'}} src="https://ahangcdn.s3-eu-central-1.amazonaws.com/hetigen/android.png" />
+              <span style={{display: 'block'}}>Androidos készülékem van, irány a Play Áruház!</span>
+              </Link>
+              <Link href="https://consumer.huawei.com/hu/mobileservices/appgallery/" target="_blank" id="huaweiStore" rel="noopener">
+              <Image style={{height: 80 + 'px'}} src="https://ahangcdn.s3-eu-central-1.amazonaws.com/hetigen/huawei.png" />
+              <span style={{display: 'block'}}>Újabb Huawei készülékem van, irány az AppGallery!</span>
+              </Link>
             </p>
             <h3>Szavazz weboldalról!</h3>
+            <p>(Ügyfélkapus azonosítás szükséges!)</p>
             <p>
               Számítógépről is szavazhatsz az ügyfélkapus azonosítód segítségével: <br />
               <Link href="#">Gépről szavazok!</Link>
             </p>
             <h3>Szavazz személyesen!</h3>
+            <p>(Fényképes igazolvány és lakcímkártya szükséges!)</p>
             <p>
-              Személyesen pedig az ország számos pontján leadhatod szavazataidat.
+              Személyesen pedig az ország számos pontján leadhatod szavazataidat.<br />
+              <Link href="#">Hol tudom leadni a szavazatomat?</Link>
             </p>
           </section>
           <MainPageEvents />

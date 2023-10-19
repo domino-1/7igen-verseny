@@ -368,6 +368,30 @@ hr.topLine {
   display: none;
 }
 
+#appStore {
+  display: block; 
+  color: #fcc232; 
+  text-align: center; 
+  text-decoration: none; 
+  margin-top: 30px;
+}
+
+#playStore {
+  display: block; 
+  color: #fcc232; 
+  text-align: center; 
+  text-decoration: none; 
+  margin-top: 40px;
+}
+
+#huaweiStore {
+  display: block; 
+  color: #fcc232; 
+  text-align: center; 
+  text-decoration: none; 
+  margin-top: 40px;
+}
+
 
 @media screen and ( max-width: 1000px ) {
 
