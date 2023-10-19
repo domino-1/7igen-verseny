@@ -2,6 +2,10 @@
 import styles from './styles.module.css';
 import './global.css';
 
+//GTM
+// import { GTM_ID } from '../lib/gtm'
+// import { useRouter } from 'next/router';
+
 // //FontAwesome
 // import { config as faConfig } from '@fortawesome/fontawesome-svg-core'
 // import '@fortawesome/fontawesome-svg-core/styles.css'
@@ -11,8 +15,8 @@ import './global.css';
 //Components
 import Link from 'next/link';
 import Footer from '../components/custom/footer';
-//import { Suspense } from 'react';
-//import Analytics from '../components/custom/d.analytics.jsx/index.js';
+import { Suspense } from 'react';
+import Analytics from '../components/custom/analytics.jsx';
 
 //Fonts
 import { Jost, Poppins } from 'next/font/google';
@@ -43,13 +47,27 @@ export const metadata = {
   
 };
 
+import { GTM_ID } from '../lib/gtm';
+
 export default function RootLayout({
   // Layouts must accept a children prop.
   // This will be populated with nested layouts or pages
   children,
 }) {
+
+  // const router = useRouter()
+  // useEffect(() => {
+  //   router.events.on('routeChangeComplete', pageview)
+  //   return () => {
+  //     router.events.off('routeChangeComplete', pageview)
+  //   }
+  // }, [router.events])
+
+
   return (
     <html className={`${jost.variable} ${poppins.variable} ${styles.html}`} lang="en">
+      <Suspense><Analytics /></Suspense>
+      
       {/* Google Tag Manager */}
       {/*<Script id="google-tag-manager" strategy="afterInteractive">{`
         (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -63,12 +81,14 @@ export default function RootLayout({
       <Script strategy="afterInteractive" id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="120f133b-ab95-4207-ae7b-77f00844e91d" data-blockingmode="auto" type="text/javascript"></Script>
       </head>*/}
       <body style={{margin: 0, background: '#232323', color: 'white'}}>
-        {/*<Suspense>
-          <Analytics />
-    </Suspense>*/}
-        {/*<noscript>
-          <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRKMZB4" height="0" width="0" style={{display: 'none',visibility:'hidden'}}></iframe>
-    </noscript>*/}
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
         <hr className="topLine"></hr>
           {/*<Script strategy="afterInteractive" id="CookieDeclaration" src="https://consent.cookiebot.com/120f133b-ab95-4207-ae7b-77f00844e91d/cd.js" type="text/javascript" async></Script>*/}
           {children}
