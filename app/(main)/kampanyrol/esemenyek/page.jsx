@@ -6,17 +6,14 @@ import Breadcrumbs from '../../../../components/custom/breadcrumbs';
 //import { sanitize, isSupported } from "isomorphic-dompurify";
 //import parse from 'html-react-parser';
 //import PostBody from '../../../../components/post-body'
-
-export async function generateStaticParams() {
-    const hirSlugs = await getCatSlugs("kampanyrol")/*.then((res) => res.json())*/;
-
-    return hirSlugs.map((post) => ({
-        slug: post.slug,
-    }));
-}
+import EventItem from '../../../../components/custom/event-item';
+import { getEvents } from '../../../../lib/api';
 
 export default async function Page({ params }) {
-    const content = await getHirPost(params.slug);
+
+    const futureEvents = await getEvents(500);
+
+    const content = await getHirPost("esemenyek");
 
     const published = new Intl.DateTimeFormat('hu-HU').format( new Date(content.modified) );
 
@@ -26,5 +23,14 @@ export default async function Page({ params }) {
         <p className="updated-date">{published}</p>
         <br />
         <ParsedHtml htmlString={content.content}></ParsedHtml>
+        <br />
+        <h2>Közelgő események</h2>
+        <section className="events-list">
+        { futureEvents.nodes.map( event => <EventItem key={event.slug}
+                    target={event.eventLink} //ehelyett lehet egy helyi event implementacio is de nincs nagyon ido
+                    city={event.eventPlace}
+                    date={event.eventDate.substring(5).replace('-', '/')}
+                    title={event.title} />) }
+        </section>
     </>
 }

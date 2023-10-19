@@ -25,7 +25,7 @@ export default async function Page({ params }) {
     return <>
         <Breadcrumbs link="hirek" category="Hírek" />
         <h1>{content.title}</h1>
-        <p>{published}</p>
+        <p className="updated-date">{published}</p>
         <br />
         <div><ParsedHtml htmlString={content.content} /></div>
     </>

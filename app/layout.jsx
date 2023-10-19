@@ -33,6 +33,10 @@ const jost = Jost({
 export const metadata = {
   title: "7IGEN",
   description: "7IGEN Oktatási Népszavazás",
+  openGraph: {
+    title: "7IGEN",
+    description: "7IGEN Oktatási Népszavazás"
+  }
   
 };
 

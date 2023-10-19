@@ -10,7 +10,7 @@ export default async function MainPageEvents() {
         <div className={styles.eventContainer}>
             <div>
                 <h2 className={styles.header}>Közelgő kampány események</h2>
-                <Link href="/esemenyek"><button className={`${styles.hexButton} hex-button`} >További események</button></Link>
+                <Link href="/kampanyrol/esemenyek"><button className={`${styles.hexButton} hex-button`} >További események</button></Link>
             </div>
             <div className={styles.eventsRow}>
                 {events.nodes.map( event => <EventItem 
@@ -19,7 +19,7 @@ export default async function MainPageEvents() {
                     date={event.eventDate.substring(5).replace('-', '/')}
                     title={event.title} />)}
             </div>
-            <Link className={styles.bottomHex} href="/esemenyek"><button className={`${styles.hexButton} hex-button`} >További események</button></Link>
+            <Link className={styles.bottomHex} href="/kampanyrol/esemenyek"><button className={`${styles.hexButton} hex-button`} >További események</button></Link>
         </div>
     );
 }
