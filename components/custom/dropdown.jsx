@@ -50,7 +50,7 @@ export default function Dropdown({ title, items, rootTarget }) {
             >
                 <div className={styles.panelMain}>
                     {items.map( item => {
-                        return <DropdownItem target={item.target} name={item.name} description={item.description} />
+                        return <DropdownItem key={item.name.toLowerCase().replaceAll(' ', '-')} target={item.target} name={item.name} description={item.description} />
                     })}
                 </div>
                 {/*<div className={styles.panelAux}>

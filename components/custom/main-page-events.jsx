@@ -13,7 +13,7 @@ export default async function MainPageEvents() {
                 <Link href="/kampanyrol/esemenyek"><button className={`${styles.hexButton} hex-button`} >További események</button></Link>
             </div>
             <div className={styles.eventsRow}>
-                {events.nodes.map( event => <EventItem 
+                {events.nodes.filter( event => Date.parse(event.eventDate) > Date.now() - 86400000).map( event => <EventItem 
                     target={event.eventLink} //ehelyett lehet egy helyi event implementacio is de nincs nagyon ido
                     city={event.eventPlace}
                     date={event.eventDate.substring(5).replace('-', '/')}

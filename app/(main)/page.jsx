@@ -24,14 +24,14 @@ export default function Home() {
         <Link href="/nepszavazasrol/a-7-kerdes">
           <div className={styles.mainButton}>A 7 kérdés</div>
         </Link>
-        <Link href="/regisztralj/" className={styles.midButton}>
+        <Link href="/nepszavazasrol/online-szavazas-az-alternativ-nepszavazason/" className={styles.midButton}>
           <div className={styles.hexButton}>
             Szavazz az
             Alternatív Népszavazáson!
           </div>
           <div className={styles.backHex}></div>
         </Link>
-        <Link href="/kampanyrol/">
+        <Link href="/nepszavazasrol/szavazohelyszinek/">
           <div className={styles.mainButton}>Szavazási helyszínek</div>
         </Link>
       </div>
@@ -68,7 +68,7 @@ export default function Home() {
               <Image style={{height: 40 + 'px', width: 40 + 'px'}} src={droidImage} />
               <span style={{display: 'block'}}>Androidos készülékem van, irány a Play Áruház!</span>
               </Link>
-              <Link href="https://consumer.huawei.com/hu/mobileservices/appgallery/" target="_blank" id="huaweiStore" rel="noopener">
+              <Link href="https://appgallery.huawei.com/app/C109421411" target="_blank" id="huaweiStore" rel="noopener">
               <Image style={{height: 40 + 'px', width: 40 + 'px'}} src={huaweiImage} />
               <span style={{display: 'block'}}>Újabb Huawei készülékem van, irány az AppGallery!</span>
               </Link>
@@ -78,7 +78,7 @@ export default function Home() {
             <p>(Ügyfélkapus azonosítás szükséges!)</p>
             <p>
               Számítógépről is szavazhatsz az ügyfélkapus azonosítód segítségével: <br />
-              <Link href="#">Gépről szavazok!</Link>
+              <Link href="https://eleve.hu/pc/7igen">Gépről szavazok!</Link>
             </p>
             <h3 style={{marginTop: 2 + 'em'}}>Szavazz személyesen!</h3>
             <p>(Fényképes igazolvány és lakcímkártya szükséges!)</p>

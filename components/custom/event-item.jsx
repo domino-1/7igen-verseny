@@ -10,7 +10,7 @@ export default function EventItem({target, city, date, title}) {
     
     if (target === undefined || target == "n/a") {
         return (
-            <div className={styles.eventLink}>
+            <div key={city + "-" + target} className={styles.eventLink}>
                 <div className={styles.eventItem}>
                     <div className={styles.city}>{city}</div>
                     <div className={styles.date}>{date}</div>
@@ -21,7 +21,7 @@ export default function EventItem({target, city, date, title}) {
     }
     else {
         return(
-            <Link href={target + ""} target={target.includes("facebook.com") ? "_blank" : "_self"} className={styles.eventLink}>
+            <Link key={city + "-" + target} href={target + ""} target={target.includes("facebook.com") ? "_blank" : "_self"} className={styles.eventLink}>
                 <div className={styles.eventItem}>
                     <div className={styles.city}>{city}</div>
                     <div className={styles.date}>{date}</div>

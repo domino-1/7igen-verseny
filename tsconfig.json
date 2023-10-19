@@ -27,7 +27,9 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/layout.jsx",
-    "app/(main)/page.jsx"
+    "app/(main)/page.jsx",
+    "lib/d.gtm.js",
+    "components/custom/d.analytics.jsx"
   ],
   "exclude": ["node_modules"]
 }
