@@ -14,7 +14,7 @@
     display: grid;
     grid-template-columns: 1fr 400px 1fr;
     z-index: 1;
-    margin-bottom: 4em;
+    margin-bottom: 7em;
 }
 
 .mainButtonRow > a {

@@ -3,6 +3,10 @@ import Image from "next/image";
 import headerPic from "../../public/7igenHeader_highlights.png";
 import Link from "next/link";
 import MainPageEvents from "../../components/custom/main-page-events";
+import appleImage from '../../public/apple.png';
+import droidImage from '../../public/android.png';
+import huaweiImage from '../../public/huawei.png';
+import { hu } from "date-fns/locale";
 
 export default function Home() {
   return (
@@ -22,12 +26,13 @@ export default function Home() {
         </Link>
         <Link href="/regisztralj/" className={styles.midButton}>
           <div className={styles.hexButton}>
-            Szavazz!
+            Szavazz az
+            Alternatív Népszavazáson!
           </div>
           <div className={styles.backHex}></div>
         </Link>
         <Link href="/kampanyrol/">
-          <div className={styles.mainButton}>A Kampányról</div>
+          <div className={styles.mainButton}>Szavazási helyszínek</div>
         </Link>
       </div>
 
@@ -54,26 +59,28 @@ export default function Home() {
             <p>(Ügyfélkapus azonosítás szükséges!)</p>
             <p>
               Töltsd le az ELEVE applikációt, és szavazz online! <br />
+              <div className="store-links flex-mobile-wrap">
               <Link href="https://apps.apple.com/us/app/eleve/id1539390605" target="_blank" id="appStore" rel="noopener">
-              <Image style={{height: 80 + 'px'}} src="https://ahangcdn.s3-eu-central-1.amazonaws.com/hetigen/apple.png" />
-              <span style={{display: 'block'}}>Almás készülékem van irány az App Store!</span>
+              <Image style={{height: 40 + 'px', width: 40 + 'px'}} src={appleImage} />
+              <span style={{display: 'block'}}>Almás készülékem van, irány az App Store!</span>
               </Link>
               <Link href="https://play.google.com/store/apps/details?id=hu.ahang.eleve&pli=1" target="_blank" id="playStore" rel="noopener">
-              <Image style={{height: 80 + 'px'}} src="https://ahangcdn.s3-eu-central-1.amazonaws.com/hetigen/android.png" />
+              <Image style={{height: 40 + 'px', width: 40 + 'px'}} src={droidImage} />
               <span style={{display: 'block'}}>Androidos készülékem van, irány a Play Áruház!</span>
               </Link>
               <Link href="https://consumer.huawei.com/hu/mobileservices/appgallery/" target="_blank" id="huaweiStore" rel="noopener">
-              <Image style={{height: 80 + 'px'}} src="https://ahangcdn.s3-eu-central-1.amazonaws.com/hetigen/huawei.png" />
+              <Image style={{height: 40 + 'px', width: 40 + 'px'}} src={huaweiImage} />
               <span style={{display: 'block'}}>Újabb Huawei készülékem van, irány az AppGallery!</span>
               </Link>
+              </div>
             </p>
-            <h3>Szavazz weboldalról!</h3>
+            <h3 style={{marginTop: 2 + 'em'}}>Szavazz weboldalról!</h3>
             <p>(Ügyfélkapus azonosítás szükséges!)</p>
             <p>
               Számítógépről is szavazhatsz az ügyfélkapus azonosítód segítségével: <br />
               <Link href="#">Gépről szavazok!</Link>
             </p>
-            <h3>Szavazz személyesen!</h3>
+            <h3 style={{marginTop: 2 + 'em'}}>Szavazz személyesen!</h3>
             <p>(Fényképes igazolvány és lakcímkártya szükséges!)</p>
             <p>
               Személyesen pedig az ország számos pontján leadhatod szavazataidat.<br />

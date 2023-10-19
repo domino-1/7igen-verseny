@@ -368,6 +368,14 @@ hr.topLine {
   display: none;
 }
 
+.store-links {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0 3em 0;
+}
+
 #appStore {
   display: block; 
   color: #fcc232; 
@@ -456,6 +464,9 @@ hr.topLine {
 
   /**  **/
   
+  .flex-mobile-wrap {
+    flex-wrap: wrap;
+  }
 
 }
 
