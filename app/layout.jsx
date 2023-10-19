@@ -68,9 +68,7 @@ export default function RootLayout({
   return (
     <html className={`${jost.variable} ${poppins.variable} ${styles.html}`} lang="en">
       <head>
-        <Suspense>
-        <Script strategy="beforeInteractive" id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="120f133b-ab95-4207-ae7b-77f00844e91d" data-blockingmode="auto" type="text/javascript" />
-        </Suspense>
+        <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="120f133b-ab95-4207-ae7b-77f00844e91d" data-blockingmode="auto" type="text/javascript" />
       </head>
 
       <Suspense><Analytics /></Suspense>
