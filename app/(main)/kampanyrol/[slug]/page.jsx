@@ -18,6 +18,8 @@ export async function generateStaticParams() {
 export default async function Page({ params }) {
     const content = await getHirPost(params.slug);
 
+    if (content === null) throw notFound();
+
     const published = new Intl.DateTimeFormat('hu-HU').format( new Date(content.modified) );
 
     return <>

@@ -5,7 +5,10 @@ import ParsedHtml from "../../../components/custom/parsed-html";
 export default async function CategoryHomePage() {
     const content = await getHirPost("sutitajekoztato");
 
+    if (content === undefinted) return (<></>);
+    
     const published = new Intl.DateTimeFormat('hu-HU').format( new Date(content.modified) );
+    
 
     //const published = new Date(content.date);
 

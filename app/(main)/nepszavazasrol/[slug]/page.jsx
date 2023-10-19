@@ -2,6 +2,7 @@ import { getHirPost, getCatSlugs } from '../../../../lib/api';
 import Link from 'next/link';
 import ParsedHtml from '../../../../components/custom/parsed-html';
 import Breadcrumbs from '../../../../components/custom/breadcrumbs';
+import { notFound } from 'next/navigation';
 //import ParsedHtml from '~/components/custom/parsed-html';
 //import { sanitize, isSupported } from "isomorphic-dompurify";
 //import parse from 'html-react-parser';
@@ -17,6 +18,8 @@ export async function generateStaticParams() {
 
 export default async function Page({ params }) {
     const content = await getHirPost(params.slug);
+
+    if (content === null) throw notFound();
 
     const published = new Intl.DateTimeFormat('hu-HU').format( new Date(content.modified) );
 
