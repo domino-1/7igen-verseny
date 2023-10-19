@@ -8,15 +8,19 @@ import Breadcrumbs from '../../../../components/custom/breadcrumbs';
 //import PostBody from '../../../../components/post-body'
 
 export async function generateStaticParams() {
-    const hirSlugs = await getCatSlugs("kampanyrol")/*.then((res) => res.json())*/;
+    const hirSlugs = await getCatSlugs("kampanyrol").then((res) => res.filter(
+        (post) => post.slug !== "esemenyek"
+    ));
 
     return hirSlugs.map((post) => ({
-        slug: post.slug,
+        slug:  post.slug,
     }));
 }
 
 export default async function Page({ params }) {
     const content = await getHirPost(params.slug);
+
+    if (content === null) throw notFound();
 
     const published = new Intl.DateTimeFormat('hu-HU').format( new Date(content.modified) );
 
