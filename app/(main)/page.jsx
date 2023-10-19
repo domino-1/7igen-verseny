@@ -24,7 +24,7 @@ export default function Home() {
         <Link href="/nepszavazasrol/a-7-kerdes">
           <div className={styles.mainButton}>A 7 kérdés</div>
         </Link>
-        <Link href="/nepszavazasrol/online-szavazas-az-alternativ-nepszavazason/" className={styles.midButton}>
+        <Link href="/nepszavazasrol/szavazas-az-alternativ-nepszavazason/" className={styles.midButton}>
           <div className={styles.hexButton}>
             Szavazz az
             Alternatív Népszavazáson!
@@ -84,7 +84,7 @@ export default function Home() {
             <p>(Fényképes igazolvány és lakcímkártya szükséges!)</p>
             <p>
               Személyesen pedig az ország számos pontján leadhatod szavazataidat.<br />
-              <Link href="#">Hol tudom leadni a szavazatomat?</Link>
+              <Link href="/nepszavazasrol/szavazohelyszinek/">Hol tudom leadni a szavazatomat?</Link>
             </p>
           </section>
           <MainPageEvents />
