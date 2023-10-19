@@ -48,7 +48,7 @@
 
 .panelMain {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     row-gap: 1em;
     line-height: 1.2;
 }

@@ -17,8 +17,8 @@ export default function Home() {
       </div>
 
       <div className={`${styles.mainButtonRow} full`}>
-        <Link href="/nepszavazasrol/">
-          <div className={styles.mainButton}>A Népszavazásról</div>
+        <Link href="/nepszavazasrol/a-7-kerdes">
+          <div className={styles.mainButton}>A 7 kérdés</div>
         </Link>
         <Link href="/regisztralj/" className={styles.midButton}>
           <div className={styles.hexButton}>

@@ -364,6 +364,10 @@ hr.topLine {
     color: var(--main-yellow);
 }*/
 
+.updated-date {
+  display: none;
+}
+
 
 @media screen and ( max-width: 1000px ) {
 
