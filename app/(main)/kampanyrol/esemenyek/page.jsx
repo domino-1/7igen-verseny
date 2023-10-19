@@ -22,7 +22,6 @@ export default async function Page({ params }) {
         <h1>{content.title}</h1>
         <p className="updated-date">{published}</p>
         <br />
-        <span>test</span>
         <ParsedHtml htmlString={content.content}></ParsedHtml>
         <br />
         <h2>Közelgő események</h2>
