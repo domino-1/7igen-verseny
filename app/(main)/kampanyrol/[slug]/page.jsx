@@ -11,7 +11,7 @@ export async function generateStaticParams() {
     const hirSlugs = await getCatSlugs("kampanyrol")/*.then((res) => res.json())*/;
 
     return hirSlugs.map((post) => ({
-        slug: post.slug,
+        slug: (post.slug === "esemenyek" ? "" : post.slug),
     }));
 }
 
