@@ -63,7 +63,7 @@ export async function getAllPostsWithSlug() {
 export async function getEvents(number) {
   const data = await fetchAPI(`
   query EventQuery {
-    events(first: ${number}) {
+    events(last: ${number}) {
       nodes {
         eventDate
         eventLink

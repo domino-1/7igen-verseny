@@ -26,7 +26,10 @@ export default async function Page({ params }) {
         <br />
         <h2>Közelgő események</h2>
         <section className="events-list">
-        { events.nodes.filter( event => Date.parse(event.eventDate) > Date.now() - 86400000).map( event => <EventItem key={event.slug}
+        { events.nodes
+            .filter( event => Date.parse(event.eventDate) > Date.now() - 86400000)
+            .sort( (a, b) => Date.parse(a.eventDate) - Date.parse(b.eventDate) )
+            .map( event => <EventItem key={event.slug}
                     target={event.eventLink} //ehelyett lehet egy helyi event implementacio is de nincs nagyon ido
                     city={event.eventPlace}
                     date={event.eventDate.substring(5).replace('-', '/')}
@@ -34,7 +37,10 @@ export default async function Page({ params }) {
         </section>
         <h2>Korábbi események</h2>
         <section className="events-list">
-        { events.nodes.filter( event => Date.parse(event.eventDate) < Date.now() - 86400000).map( event => <EventItem key={event.slug}
+        { events.nodes
+            .filter( event => Date.parse(event.eventDate) < Date.now() - 86400000)
+            .sort( (a, b) => Date.parse(a.eventDate) - Date.parse(b.eventDate) )
+            .map( event => <EventItem key={event.slug}
                     target={event.eventLink} //ehelyett lehet egy helyi event implementacio is de nincs nagyon ido
                     city={event.eventPlace}
                     date={event.eventDate.substring(5).replace('-', '/')}
