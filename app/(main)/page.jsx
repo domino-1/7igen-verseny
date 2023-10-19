@@ -57,7 +57,7 @@ export default function Home() {
             <h2>Hogyan tudok szavazni?</h2>
             <h3>Szavazz mobileszközön!</h3>
             <p>(Ügyfélkapus azonosítás szükséges!)</p>
-            <p>
+            <div>
               Töltsd le az ELEVE applikációt, és szavazz online! <br />
               <div className="store-links flex-mobile-wrap">
               <Link href="https://apps.apple.com/us/app/eleve/id1539390605" target="_blank" id="appStore" rel="noopener">
@@ -73,7 +73,7 @@ export default function Home() {
               <span style={{display: 'block'}}>Újabb Huawei készülékem van, irány az AppGallery!</span>
               </Link>
               </div>
-            </p>
+            </div>
             <h3 style={{marginTop: 2 + 'em'}}>Szavazz weboldalról!</h3>
             <p>(Ügyfélkapus azonosítás szükséges!)</p>
             <p>

@@ -41,6 +41,7 @@ const jost = Jost({
 export const metadata = {
   title: "7IGEN",
   description: "7IGEN Oktatási Népszavazás",
+  metadataBase: 'https://7igen.hu',
   openGraph: {
     title: "7IGEN",
     description: "7IGEN Oktatási Népszavazás"

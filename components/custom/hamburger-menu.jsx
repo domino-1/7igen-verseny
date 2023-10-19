@@ -13,7 +13,7 @@ export default function HamburgerMenu({ children }) {
     return (
         <Menu isOpen={false} className="hamburgerMenu" customBurgerIcon={ <FontAwesomeIcon icon={faBars} /> }
                 customCrossIcon={ <FontAwesomeIcon icon={faXmark} /> } >
-            {children}
+            { children }
         </Menu>
     )
 }

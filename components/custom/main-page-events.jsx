@@ -19,7 +19,7 @@ export default async function MainPageEvents() {
                     .sort( (a, b) => Date.parse(a.eventDate) - Date.parse(b.eventDate) )
                     .map( (event, index) => {
                         while (index < 5) {
-                            return <EventItem 
+                            return <EventItem key={'event-' + event.title}
                                 target={event.eventLink} //ehelyett lehet egy helyi event implementacio is de nincs nagyon ido
                                 city={event.eventPlace}
                                 date={event.eventDate.substring(5).replace('-', '/')}

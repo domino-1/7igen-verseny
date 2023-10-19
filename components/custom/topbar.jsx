@@ -76,10 +76,8 @@ export default async function TopBar() {
     return (
         <div className={styles.topBar}>
             <nav className={styles.topBarStart}>
-                <div class="mobile-only">
-                    <HamburgerMenu>
-                        {mobileMenuItems}
-                    </HamburgerMenu>
+                <div className="mobile-only">
+                    <HamburgerMenu children={mobileMenuItems} />
                 </div>
                 <Link className={styles.logo} href="/"><Image src={logoPic} width={40} height={40} /></Link>
                 <Dropdown title="A népszavazásról" items={nepszavazasrol} rootTarget="/nepszavazasrol/"></Dropdown>
