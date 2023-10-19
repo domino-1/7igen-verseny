@@ -8,10 +8,12 @@ import Breadcrumbs from '../../../../components/custom/breadcrumbs';
 //import PostBody from '../../../../components/post-body'
 
 export async function generateStaticParams() {
-    const hirSlugs = await getCatSlugs("kampanyrol")/*.then((res) => res.json())*/;
+    const hirSlugs = await getCatSlugs("kampanyrol").then(res.filter(
+        (post) => post.slug !== "esemenyek"
+    ));
 
     return hirSlugs.map((post) => ({
-        slug: (post.slug === "esemenyek" ? "" : post.slug),
+        slug:  post.slug,
     }));
 }
 
