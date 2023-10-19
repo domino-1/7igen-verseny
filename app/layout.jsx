@@ -17,6 +17,7 @@ import Link from 'next/link';
 import Footer from '../components/custom/footer';
 import { Suspense } from 'react';
 import Analytics from '../components/custom/analytics.jsx';
+import CookieDeclaration from '../components/custom/cookiedec';
 
 //Fonts
 import { Jost, Poppins } from 'next/font/google';
@@ -66,6 +67,12 @@ export default function RootLayout({
 
   return (
     <html className={`${jost.variable} ${poppins.variable} ${styles.html}`} lang="en">
+      <head>
+        <Suspense>
+        <Script strategy="beforeInteractive" id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="120f133b-ab95-4207-ae7b-77f00844e91d" data-blockingmode="auto" type="text/javascript" />
+        </Suspense>
+      </head>
+
       <Suspense><Analytics /></Suspense>
       
       {/* Google Tag Manager */}
@@ -91,6 +98,7 @@ export default function RootLayout({
         </noscript>
         <hr className="topLine"></hr>
           {/*<Script strategy="afterInteractive" id="CookieDeclaration" src="https://consent.cookiebot.com/120f133b-ab95-4207-ae7b-77f00844e91d/cd.js" type="text/javascript" async></Script>*/}
+          <CookieDeclaration />
           {children}
         <Footer />
       </body>
