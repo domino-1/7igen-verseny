@@ -44,7 +44,7 @@ export const metadata = {
   metadataBase: 'https://7igen.hu',
   openGraph: {
     title: "Szavazz!",
-    description: "7IGEN Oktatási Népszavazás"
+    description: "7IGEN Alternatív Oktatási Népszavazás"
   }
   
 };
