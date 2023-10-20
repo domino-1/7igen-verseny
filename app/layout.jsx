@@ -43,7 +43,7 @@ export const metadata = {
   description: "7IGEN Oktatási Népszavazás",
   metadataBase: 'https://7igen.hu',
   openGraph: {
-    title: "7IGEN",
+    title: "Szavazz!",
     description: "7IGEN Oktatási Népszavazás"
   }
   
