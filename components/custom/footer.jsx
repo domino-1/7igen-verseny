@@ -43,6 +43,7 @@ export default function Footer() {
                     <div><Link href="https://hivatlanul.com/" target="_blank"></Link></div>
                     <div><Link href="https://facebook.com/pedagogusegyseg/" target="_blank"></Link></div>
                     <div><Link href="https://www.amnesty.hu/" target="_blank"></Link></div>
+                    <div><Link href="https://www.cka.hu/" taget="_blank"></Link></div>
                 </div>
             </div>
             <div id="footer-bottom" className="grid-centered-row">

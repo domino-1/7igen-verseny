@@ -29,7 +29,8 @@
     "app/layout.jsx",
     "app/(main)/page.jsx",
     "lib/d.gtm.js",
-    "components/custom/d.analytics.jsx"
+    "components/custom/d.analytics.jsx",
+    "app/api/revalidate/route.js"
   ],
   "exclude": ["node_modules"]
 }

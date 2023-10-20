@@ -60,7 +60,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr auto;
-    padding: 2.5em 1em 0.5em 1em;
+    padding: 2.5em 1em 3em;
     color: black;
     background-color: var(--main-yellow);
     row-gap: 2.5em;
