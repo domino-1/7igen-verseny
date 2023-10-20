@@ -1,6 +1,6 @@
 const API_URL = process.env.WORDPRESS_API_URL as string;
 
-async function fetchAPI(query = '', { variables }: Record<string, any> = {}) {
+async function fetchAPI(query = '', { variables }: Record<string, any> = {}, tag = 'default') {
   const headers = { 'Content-Type': 'application/json' }
 
   if (process.env.WORDPRESS_AUTH_REFRESH_TOKEN) {
@@ -17,7 +17,8 @@ async function fetchAPI(query = '', { variables }: Record<string, any> = {}) {
       query,
       variables,
     }),
-    next: { revalidate: 300 }
+    next: { revalidate: 300,
+            tags: [ tag ] }
   })
 
   const json = await res.json()
@@ -60,6 +61,9 @@ export async function getAllPostsWithSlug() {
   return data?.posts
 }
 
+/**
+ * * In use
+ * */
 export async function getEvents(number) {
   const data = await fetchAPI(`
   query EventQuery {
@@ -72,10 +76,13 @@ export async function getEvents(number) {
         slug
       }
     }
-  }`)
+  }`, { }, 'event')
   return data?.events
 }
 
+/**
+ ** In use
+ * */
 export async function getCatSlugs(category) {
   const data = await fetchAPI(`
     query CatSlugs {
@@ -85,10 +92,13 @@ export async function getCatSlugs(category) {
         }
       }
     }
-  `)
+  `, {}, 'content')
   return data?.posts.nodes
 }
 
+/**
+ * * In use
+ * */
 export async function getPostListFromCategory(category) {
   const data = await fetchAPI(`
     query CatPostList {
@@ -104,10 +114,13 @@ export async function getPostListFromCategory(category) {
         }
       }
     }
-  `)
+  `, {}, 'content')
   return data?.posts
 }
 
+/**
+ * * In use - unused
+ * */
 export async function getAllCatPosts(category) {
   const data = await fetchAPI(`
     query CatPosts {
@@ -134,10 +147,13 @@ export async function getAllCatPosts(category) {
         }
       }
     }
-  `)
+  `, {}, 'content')
   return data?.posts
 }
 
+/**
+ * * In use - unused
+ * */
 export async function getAllHirPosts() {
   const data = await fetchAPI(`
     query HirPosts {
@@ -164,7 +180,7 @@ export async function getAllHirPosts() {
         }
       }
     }
-  `)
+  `, {}, 'content')
   return data?.posts
 }
 
@@ -172,6 +188,9 @@ export async function getPost(slug) {
   return getHirPost(slug); //TEMP
 }
 
+/**
+ * * In use
+ * */
 export async function getHirPost(slug) {
   const data = await fetchAPI(`
   query HirPost {
@@ -187,7 +206,7 @@ export async function getHirPost(slug) {
       title
     }
   }
-  `)
+  `, {}, 'content')
   return data?.post
 }
 
