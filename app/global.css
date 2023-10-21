@@ -473,13 +473,13 @@ hr.topLine {
   }
 
   .desktop-only {
-    display: none;
+    display: none !important;
   }
 
 }
 
 @media screen and (min-width: 1001px) {
   .mobile-only {
-    display: none;
+    display: none !important;
   }
 }
