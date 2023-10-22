@@ -3,8 +3,8 @@ import Image from "next/image";
 import headerPic from "../../public/7igenHeader_highlights.png";
 import Link from "next/link";
 import MainPageEvents from "../../components/custom/main-page-events";
-import appleImage from '../../public/apple.png';
-import droidImage from '../../public/android.png';
+import appleImage from '../../public/Download_on_the_App_Store_Badge_HU_RGB_blk_100317.svg';
+import droidImage from '../../public/google-play-badge.png';
 import huaweiImage from '../../public/huawei.png';
 import { hu } from "date-fns/locale";
 
@@ -61,11 +61,11 @@ export default function Home() {
               Töltsd le az ELEVE applikációt, és szavazz online! <br />
               <div className="store-links flex-mobile-wrap">
               <Link href="https://apps.apple.com/us/app/eleve/id1539390605" target="_blank" id="appStore" rel="noopener">
-              <Image style={{height: 40 + 'px', width: 40 + 'px'}} src={appleImage} />
+              <Image style={{height: 'auto !important', width: 150 + 'px !important'}} src={appleImage} />
               <span style={{display: 'block'}}>Almás készülékem van, irány az App Store!</span>
               </Link>
               <Link href="https://play.google.com/store/apps/details?id=hu.ahang.eleve&pli=1" target="_blank" id="playStore" rel="noopener">
-              <Image style={{height: 40 + 'px', width: 40 + 'px'}} src={droidImage} />
+              <Image style={{height: 'auto !important', width: 150 + 'px !important'}} src={droidImage} />
               <span style={{display: 'block'}}>Androidos készülékem van, irány a Play Áruház!</span>
               </Link>
               <Link href="https://appgallery.huawei.com/app/C109421411" target="_blank" id="huaweiStore" rel="noopener">
