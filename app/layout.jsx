@@ -70,6 +70,7 @@ export default function RootLayout({
     <html className={`${jost.variable} ${poppins.variable} ${styles.html}`} lang="en">
       <head>
         <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="120f133b-ab95-4207-ae7b-77f00844e91d" data-blockingmode="auto" type="text/javascript" />
+        <meta name="apple-itunes-app" content="app-id=1539390605"></meta>
       </head>
 
       <Suspense><Analytics /></Suspense>
