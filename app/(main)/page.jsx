@@ -3,7 +3,7 @@ import Image from "next/image";
 import headerPic from "../../public/7igenHeader_highlights.png";
 import Link from "next/link";
 import MainPageEvents from "../../components/custom/main-page-events";
-import appleImage from '../../public/Download_on_the_App_Store_Badge_HU_RGB_blk_100317.svg';
+import appleImage from '../../public/Download_on_the_App_Store_Badge_HU_RGB_blk_100317.png';
 import droidImage from '../../public/google-play-badge.png';
 import huaweiImage from '../../public/huawei.png';
 import { hu } from "date-fns/locale";
@@ -69,7 +69,7 @@ export default function Home() {
               <span style={{display: 'block'}}>Androidos készülékem van, irány a Play Áruház!</span>
               </Link>
               <Link href="https://appgallery.huawei.com/app/C109421411" target="_blank" id="huaweiStore" rel="noopener">
-              <Image style={{height: 40 + 'px', width: 40 + 'px'}} src={huaweiImage} />
+              <Image style={{height: 'auto !important', width: 150 + 'px !important'}} src={huaweiImage} />
               <span style={{display: 'block'}}>Újabb Huawei készülékem van, irány az AppGallery!</span>
               </Link>
               </div>
