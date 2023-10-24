@@ -52,7 +52,7 @@ export default function Footer() {
                     <Link href="https://www.instagram.com/explore/tags/7igen" target="_blank"><FontAwesomeIcon icon={faInstagram} /></Link>
                     <Link href="https://youtube.com/aHangvideo" target="_blank"><FontAwesomeIcon icon={faYoutube} /></Link>
                 </div>
-                <span id="footer-legal"><Link href="https://ahang.hu/7igen-adatvedelem/" target="_blank">Adatvédelmi nyilatkozat</Link><span> | © 2023 | </span><Link href="/sutitajekoztato">Sütitájékozató</Link></span>
+                <span id="footer-legal"><Link href="/kampanyrol/adatvedelem" target="_blank">Adatvédelmi nyilatkozat</Link><span> | © 2023 | </span><Link href="/sutitajekoztato">Sütitájékozató</Link></span>
                 <Link href="/rolunk"><button className="hex-button" >Rólunk</button></Link>
             </div>
         </footer>
