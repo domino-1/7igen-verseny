@@ -1,7 +1,7 @@
 import { getHirPost, getCatSlugs } from '../../../../lib/api';
 import Link from 'next/link';
-import ParsedHtml from '../../../../components/custom/parsed-html';
-import Breadcrumbs from '../../../../components/custom/breadcrumbs';
+import ParsedHtml from '../../../components/custom/parsed-html';
+import Breadcrumbs from '../../../components/custom/breadcrumbs';
 //import ParsedHtml from '~/components/custom/parsed-html';
 //import { sanitize, isSupported } from "isomorphic-dompurify";
 //import parse from 'html-react-parser';

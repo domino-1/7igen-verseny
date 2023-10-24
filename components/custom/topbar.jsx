@@ -2,7 +2,7 @@ import Link from 'next/link';
 //import '../../app/global.css';
 import styles from './topbar.module.css';
 import Dropdown from './dropdown'
-import { getPostListFromCategory } from '../../lib/api';
+//import { getPostListFromCategory } from '../../lib/api';
 // import ParsedHtml from './parsed-html';
 import Image from 'next/image';
 import logoPic from '../../public/15-removebg-preview.png';
@@ -32,36 +32,36 @@ import HamburgerItem from './hamburger-item';
 // ]
 
 export default async function TopBar() {
-    const nepszavazasrolPostList = await getPostListFromCategory("nepszavazasrol");
+    // const nepszavazasrolPostList = await getPostListFromCategory("nepszavazasrol");
 
     let nepszavazasrol = [];
 
-    nepszavazasrolPostList.edges.map( page => {
-        page = page.node;
-        let item = {
-            name: page.title,
-            description: page.excerpt,
-            target: "/nepszavazasrol/" + page.slug,
-        };
-        nepszavazasrol.push(item);
-    })
+    // nepszavazasrolPostList.edges.map( page => {
+    //     page = page.node;
+    //     let item = {
+    //         name: page.title,
+    //         description: page.excerpt,
+    //         target: "/nepszavazasrol/" + page.slug,
+    //     };
+    //     nepszavazasrol.push(item);
+    // })
 
 
-    const kampanyrolPostList = await getPostListFromCategory("kampanyrol");
+    // const kampanyrolPostList = await getPostListFromCategory("kampanyrol");
 
     let kampanyrol = [];
 
-    /* {/*<ParsedHtml htmlString={page.excerpt} />*/
+    // /* {/*<ParsedHtml htmlString={page.excerpt} />*/
 
-    kampanyrolPostList.edges.map( page => {
-        page = page.node;
-        let item = {
-            name: page.title,
-            description: page.excerpt,
-            target: "/kampanyrol/" + page.slug,
-        };
-        kampanyrol.push(item);
-    })
+    // kampanyrolPostList.edges.map( page => {
+    //     page = page.node;
+    //     let item = {
+    //         name: page.title,
+    //         description: page.excerpt,
+    //         target: "/kampanyrol/" + page.slug,
+    //     };
+    //     kampanyrol.push(item);
+    // })
 
     let mobileMenuItems = [];
     mobileMenuItems.push(<HamburgerItem target="/nepszavazasrol/" text="A Népszavazásról" className="topLevelItem" />);

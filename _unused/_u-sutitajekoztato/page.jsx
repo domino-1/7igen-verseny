@@ -1,6 +1,6 @@
 import { getHirPost } from "../../../lib/api";
-import Breadcrumbs from "../../../components/custom/breadcrumbs";
-import ParsedHtml from "../../../components/custom/parsed-html";
+import Breadcrumbs from "../../components/custom/breadcrumbs";
+import ParsedHtml from "../../components/custom/parsed-html";
 
 export default async function CategoryHomePage() {
     const content = await getHirPost("sutitajekoztato");

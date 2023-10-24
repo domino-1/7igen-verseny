@@ -2,10 +2,10 @@ import styles from "./home.module.css";
 import Image from "next/image";
 import headerPic from "../../public/7igenHeader_highlights.png";
 import Link from "next/link";
-import MainPageEvents from "../../components/custom/main-page-events";
-import appleImage from '../../public/Download_on_the_App_Store_Badge_HU_RGB_blk_100317.png';
-import droidImage from '../../public/google-play-badge.png';
-import huaweiImage from '../../public/huawei.png';
+//import MainPageEvents from "../../components/custom/main-page-events";
+//import appleImage from '../../public/Download_on_the_App_Store_Badge_HU_RGB_blk_100317.png';
+//import droidImage from '../../public/google-play-badge.png';
+//import huaweiImage from '../../public/huawei.png';
 import { hu } from "date-fns/locale";
 
 export default function Home() {
@@ -57,23 +57,6 @@ export default function Home() {
             <h2>Hogyan tudok szavazni?</h2>
             <h3>Szavazz mobileszközön!</h3>
             <p>(Ügyfélkapus azonosítás szükséges!)</p>
-            <div>
-              Töltsd le az ELEVE applikációt, és szavazz online! <br />
-              <div className="store-links flex-mobile-wrap">
-              <Link href="https://apps.apple.com/us/app/eleve/id1539390605" target="_blank" id="appStore" rel="noopener">
-              <Image style={{height: 'auto !important', width: 150 + 'px !important'}} src={appleImage} />
-              <span style={{display: 'block'}}>Almás készülékem van, irány az App Store!</span>
-              </Link>
-              <Link href="https://play.google.com/store/apps/details?id=hu.ahang.eleve&pli=1" target="_blank" id="playStore" rel="noopener">
-              <Image style={{height: 'auto !important', width: 150 + 'px !important'}} src={droidImage} />
-              <span style={{display: 'block'}}>Androidos készülékem van, irány a Play Áruház!</span>
-              </Link>
-              <Link href="https://appgallery.huawei.com/app/C109421411" target="_blank" id="huaweiStore" rel="noopener">
-              <Image style={{height: 'auto !important', width: 150 + 'px !important'}} src={huaweiImage} />
-              <span style={{display: 'block'}}>Újabb Huawei készülékem van, irány az AppGallery!</span>
-              </Link>
-              </div>
-            </div>
             <h3 style={{marginTop: 2 + 'em'}}>Szavazz weboldalról!</h3>
             <p>(Ügyfélkapus azonosítás szükséges!)</p>
             <p>
@@ -87,7 +70,7 @@ export default function Home() {
               <Link href="/nepszavazasrol/szavazohelyszinek/">Hol tudom leadni a szavazatomat?</Link>
             </p>
           </section>
-          <MainPageEvents />
+          {/*<MainPageEvents />*/}
         {/*/div>
       </div>*/}
     </>

@@ -1,10 +1,10 @@
 import styles from './event.module.css';
 import EventItem from './event-item';
-import { getEvents } from '../../lib/api';
+//import { getEvents } from '../../lib/_u-api';
 import Link from 'next/link';
 
 export default async function MainPageEvents() {
-    const events = await getEvents(15);
+    //const events = await getEvents(15);
     let eventCounter = 5;
 
     return (
