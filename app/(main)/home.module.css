@@ -14,7 +14,7 @@
     display: grid;
     grid-template-columns: 1fr 400px 1fr;
     z-index: 1;
-    margin-bottom: 7em;
+    margin-bottom: 5em;
 }
 
 .mainButtonRow > a {
@@ -23,7 +23,7 @@
 
 .mainButtonRow .mainButton {
     height: 100%;
-    background: var(--main-yellow);
+    background: var(--main-red);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,7 +45,7 @@
     width: 107%;
     grid-row: 1;
     grid-column: 1;
-    background-color: var(--main-red);
+    background-color: var(--main-yellow);
     clip-path: polygon(8% 0, 92% 0, 100% 50%, 92% 100%, 8% 100%, 0% 50%);
     transition: scale 150ms ease-in-out;
     z-index: 2;
@@ -60,6 +60,8 @@
     font-size: 32px;
     line-height: 1.2;
     text-align: center;
+
+    flex-direction: column;
 }
 
 .mainButtonRow .backHex {

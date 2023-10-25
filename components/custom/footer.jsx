@@ -15,7 +15,7 @@ import eleveLogo from '../../public/eleve_logo.png';
 export default function Footer() {
     return (
         <footer>
-            <link rel="stylesheet" href="https://ahangcdn.s3-eu-central-1.amazonaws.com/hetigen.css"></link>
+            {/*<link rel="stylesheet" href="https://ahangcdn.s3-eu-central-1.amazonaws.com/hetigen.css"></link>*/}
             <div id="projekt-infok">
                 <h2>7IGEN Oktatási&nbsp;Népszavazás</h2>
                 <div style={{display: "flex", gap: "10px"}}>

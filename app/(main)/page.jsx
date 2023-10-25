@@ -21,25 +21,25 @@ export default function Home() {
       </div>
 
       <div className={`${styles.mainButtonRow} full`}>
-        <Link href="/nepszavazasrol/a-7-kerdes">
-          <div className={styles.mainButton}>A 7 kérdés</div>
+        <Link href="/csapatok/fecske">
+          <div className={styles.mainButton}><u>F</u>ecske Csapat</div>
         </Link>
-        <Link href="/nepszavazasrol/szavazas-az-alternativ-nepszavazason/" className={styles.midButton}>
+        <Link href="/challengek/" className={styles.midButton}>
           <div className={styles.hexButton}>
-            Szavazz az
-            Alternatív Népszavazáson!
+            <span style={{paddingBottom: '1rem'}}>Challengek!</span>
+            <span style={{fontWeight: 'normal', fontSize: '14px', paddingBottom: '.5em'}}>Oldj meg challengeket, szerezz pontokat a csapatodnak!</span>
           </div>
           <div className={styles.backHex}></div>
         </Link>
-        <Link href="/nepszavazasrol/szavazohelyszinek/">
-          <div className={styles.mainButton}>Szavazási helyszínek</div>
+        <Link href="/csapatok/golya/">
+          <div className={styles.mainButton}><u>G</u>ólya Csapat</div>
         </Link>
       </div>
 
       {/*<div className={`${styles.mainPageContent} full`}>
         <div className={styles.content}>*/}
           <section className={styles.textContent}>
-            <h1>7IGEN ALTERNATÍV NÉPSZAVAZÁS AZ OKTATÁSRÓL</h1>
+            <h1 style={{textAlign: 'center'}}>A 7IGEN Versenyről</h1>
             <p>
               Az oktatás sorsa az országunk jövője! <br />
               Együtt, közösen a diákokkal, pedagógusokkal, civilekkel és tenni akaró állampolgárokkal továbbvisszük a remény lángját!

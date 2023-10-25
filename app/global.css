@@ -1,6 +1,6 @@
 :root {
-    --main-red: #f80000;
-    --main-yellow: #FCC231;
+    --main-red: #313F56;
+    --main-yellow: #8F1606;
     --second-red: #b70000;
     --black: black;
 }
@@ -166,7 +166,9 @@ section.events-list > * > div {
       var(--feature) [feature-end]
       var(--full) [full-end];
 
-      align-content: start  ;
+      align-content: start;
+
+      color: var(--black);
   }
 
   .bodyContent > * {

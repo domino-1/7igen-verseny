@@ -51,6 +51,19 @@ export default async function TopBar() {
 
     let kampanyrol = [];
 
+    let csapatok = [];
+
+    csapatok.push( {
+        name: "Fecske csapat",
+        description: "A csapat mottója",
+        target: "/csapatok/fecske"
+    },
+    {
+        name: "Gólya csapat",
+        description: "A csapat mottója",
+        target: "/csapatok/golya"
+    } )
+
     // /* {/*<ParsedHtml htmlString={page.excerpt} />*/
 
     // kampanyrolPostList.edges.map( page => {
@@ -64,12 +77,16 @@ export default async function TopBar() {
     // })
 
     let mobileMenuItems = [];
-    mobileMenuItems.push(<HamburgerItem target="/nepszavazasrol/" text="A Népszavazásról" className="topLevelItem" />);
+    mobileMenuItems.push(<HamburgerItem target="/challengek/" text="Challengek" className="topLevelItem" />);
     nepszavazasrol.map( elem => (
         mobileMenuItems.push(<HamburgerItem target={elem.target} text={elem.name} description={elem.description} className="childItem" />)
     ));
-    mobileMenuItems.push(<HamburgerItem target="/kampanyrol/" text="A Kampányról" className="topLevelItem" />);
+    mobileMenuItems.push(<HamburgerItem target="/pontok/" text="Pontok" className="topLevelItem" />);
     kampanyrol.map( elem => (
+        mobileMenuItems.push(<HamburgerItem target={elem.target} text={elem.name} description={elem.description} className="childItem" />)
+    ));
+    mobileMenuItems.push(<HamburgerItem target="/csapatok/" text="Csapatok" className="topLevelItem" />);
+    csapatok.map( elem => (
         mobileMenuItems.push(<HamburgerItem target={elem.target} text={elem.name} description={elem.description} className="childItem" />)
     ));
 
@@ -79,15 +96,16 @@ export default async function TopBar() {
                 <div className="mobile-only">
                     <HamburgerMenu children={mobileMenuItems} />
                 </div>
-                <Link className={styles.logo} href="/"><Image src={logoPic} width={40} height={40} /></Link>
-                <Dropdown title="A népszavazásról" items={nepszavazasrol} rootTarget="/nepszavazasrol/"></Dropdown>
-                <Dropdown title="A kampányról" items={kampanyrol} rootTarget="/kampanyrol/"></Dropdown>
+                {/*<Link className={styles.logo} href="/"><Image src={logoPic} width={40} height={40} /></Link>*/}
+                <Dropdown title="Challengek" items={nepszavazasrol} rootTarget="/challengek/"></Dropdown>
+                <Dropdown title="Pontok" items={kampanyrol} rootTarget="/pontok/"></Dropdown>
+                <Dropdown title="Csapatok" items={csapatok} rootTarget="/csapatok/"></Dropdown>
                 {/*<Link href="/hirek">Hírek</Link>*/} {/*TODO remove test when done */}
                 {/*<Dropdown title="Aktivistáknak" rootTarget="/aktivistaknak/"></Dropdown>*/}
             </nav>
             <nav className={styles.topBarEnd}>
-            <Link style={{color: 'var(--main-yellow)'}} href="/aktivista-jelentkezes">Jelentkezz Aktivistának!</Link>
-                <Link href='https://tamogass.ahang.hu/oktatas-nepszavazas?utm_source=7igen.hu' target='_blank'><button className="hex-button" >Támogatás</button></Link>
+                {/*<Link style={{color: 'var(--main-yellow)'}} href="/aktivista-jelentkezes">Jelentkezz Aktivistának!</Link>*/}
+                <Link href='/csapatok/' target='_blank'><button className="hex-button" >Jelentkezz!</button></Link>
             </nav>
         </div>    
     )

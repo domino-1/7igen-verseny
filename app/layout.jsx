@@ -87,7 +87,7 @@ export default function RootLayout({
       {/*<head>
       <Script strategy="afterInteractive" id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="120f133b-ab95-4207-ae7b-77f00844e91d" data-blockingmode="auto" type="text/javascript"></Script>
       </head>*/}
-      <body style={{margin: 0, background: '#232323', color: 'white'}}>
+      <body style={{margin: 0, background: 'white', color: 'white'}}>
         {/*<noscript>
           <iframe
             src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
@@ -100,6 +100,8 @@ export default function RootLayout({
           {/*<Script strategy="afterInteractive" id="CookieDeclaration" src="https://consent.cookiebot.com/120f133b-ab95-4207-ae7b-77f00844e91d/cd.js" type="text/javascript" async></Script>*/}
           {/*<Suspense><CookieDeclaration /></Suspense>*/}
           {children}
+          <div id="sideLine" style={{position: 'fixed', width: 'calc(100% - 20px)', height: '100%', top: 0, left: 0, zIndex: '-2',
+          background: 'transparent', borderLeft: '1px solid var(--main-red)', borderRight: '1px solid var(--main-red)', margin: '0 10px'}}></div>
         <Footer />
       </body>
     </html>
