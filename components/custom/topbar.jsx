@@ -105,7 +105,7 @@ export default async function TopBar() {
             </nav>
             <nav className={styles.topBarEnd}>
                 {/*<Link style={{color: 'var(--main-yellow)'}} href="/aktivista-jelentkezes">Jelentkezz Aktivistának!</Link>*/}
-                <Link href='/csapatok/' target='_blank'><button className="hex-button" >Jelentkezz!</button></Link>
+                <Link href='/csapatok/' target='_blank'><button className="hex-button" >Csatlakozz!</button></Link>
             </nav>
         </div>    
     )
