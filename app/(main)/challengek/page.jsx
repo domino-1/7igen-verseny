@@ -33,7 +33,7 @@ export default async function CategoryHomePage() {
 
             <div><b>Sulitúra</b> - 7p</div>
             <ul>
-                <li>Győzz meg valakit, hogy szavazzon egy olyan iskolából ahonnan még nem szavazott senki a csapatodból</li>
+                <li>Érjetek el minél több iskolát! A csapatodnak annyiszor 7 pont jár, ahány különböző iskolából vannak tagjai.</li>
                 <li>Online és Élőben: Ugyan az a rendszer mint a "Hozz még egy szavazót!"nál</li>
             </ul>
             <br />
