@@ -513,3 +513,30 @@ tbody [colspan] {
 tbody th span {
   font-weight: normal;
 }
+
+a {
+  color: var(--main-red);
+}
+
+#ponttabla {
+  margin: 0 10px;
+  background: white;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+/** challengeg oldal */
+
+.contentChallengek ~ section {
+  padding: 0 10px;
+}
+
+.contentChallengek ~ section > :not(h2) {
+  margin-left: 1em;
+}
+
+.bodyContent section {
+  margin: 0 15px;
+}

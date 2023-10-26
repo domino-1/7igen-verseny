@@ -5,7 +5,7 @@ export default async function CategoryHomePage() {
 
     return (<>
         <Breadcrumbs link="/challengek/" category="Challengek" />
-        <h1>Challengek</h1>
+        <h1 className="contentChallengek">Challengek</h1>
         <br />
         <section class="feature" style={{marginTop: '2em'}}>
             <h2>Szavazás</h2>

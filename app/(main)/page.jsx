@@ -41,33 +41,19 @@ export default function Home() {
           <section className={styles.textContent}>
             <h1 style={{textAlign: 'center'}}>A 7IGEN Versenyről</h1>
             <p>
-              Az oktatás sorsa az országunk jövője! <br />
-              Együtt, közösen a diákokkal, pedagógusokkal, civilekkel és tenni akaró állampolgárokkal továbbvisszük a remény lángját!
-              Tarts velünk te is! <br />
-              Vigyük sikerre Magyarország első alternatív népszavazását!
+              Csatlakozz egy <Link href="/csapatok/">csapathoz</Link>, oldj meg <Link href="/challengek/">challengeket</Link> és szerezz <Link href="/pontok/">pontokat</Link>! A challengeket egyedül és többen együtt is meg tudjátok
+              oldani. A versenyt az Egységes Diákfront szervezi a <Link href="https://7igen.hu">7IGEN-es alternatív népszavazás</Link> alkalmából, de bárki csatlakozhat, nem kell hozzá EDF tagnak
+              lenned!
             </p>
             <p>
-              Jelentkezz segítőnek, szavazz a kérdésekre, és adományozz az alternatív népszavazásra!
+              A verseny többnyire online fut és október 30-ig tart. Mindenki a közösen gyűjt pontokat a saját csapatának, a két csapat
+              egymással versenyzik. Az alternatív népszavazás végén lesz kikiálltva a győztes csapat. Pontokat <Link href="/challengek/">Challengek</Link> megoldásával 
+              tudsz szerezni, ezek az egyszerűbbektől a bonyolultabbakon keresztül a viccesekig terjednek. A challengeket online, általában Google Form-ok 
+              segítségvel tudod beküldeni. Vicces válaszokért is járhat külön pontozás! Lehetnek olyan feladtok, amik igényelnek valamennyi koordinációt csapattagok között,
+              ezekért viszont több pont is jár. Vannak olyan feladatok, amik csak a 28i hétvégén nyílnak meg.
             </p>
             <p>
-              Szavazz online vagy személyesen 7 kérdésben, ha elmúltál 16 éves és rendelkezel érvényes fényképes igazolvánnyal (személyi, útlevél, jogosítvány)!
-            </p>
-          </section>
-          <section className={styles.textContent}>
-            <h2>Hogyan tudok szavazni?</h2>
-            <h3>Szavazz mobileszközön!</h3>
-            <p>(Ügyfélkapus azonosítás szükséges!)</p>
-            <h3 style={{marginTop: 2 + 'em'}}>Szavazz weboldalról!</h3>
-            <p>(Ügyfélkapus azonosítás szükséges!)</p>
-            <p>
-              Számítógépről is szavazhatsz az ügyfélkapus azonosítód segítségével: <br />
-              <Link href="https://eleve.hu/pc/7igen">Gépről szavazok!</Link>
-            </p>
-            <h3 style={{marginTop: 2 + 'em'}}>Szavazz személyesen!</h3>
-            <p>(Fényképes igazolvány és lakcímkártya szükséges!)</p>
-            <p>
-              Személyesen pedig az ország számos pontján leadhatod szavazataidat.<br />
-              <Link href="/nepszavazasrol/szavazohelyszinek/">Hol tudom leadni a szavazatomat?</Link>
+              A szavazás utolsó napján, október 30-a hétfőn minden challengért tripla pont jár a "Szavazz!"-kivételével!
             </p>
           </section>
           {/*<MainPageEvents />*/}

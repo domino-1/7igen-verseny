@@ -93,19 +93,20 @@ export default async function TopBar() {
     return (
         <div className={styles.topBar}>
             <nav className={styles.topBarStart}>
-                <div className="mobile-only">
+                <div className="mobile-only" style={{order: -2}}>
                     <HamburgerMenu children={mobileMenuItems} />
                 </div>
                 <Link className={styles.logo} style={{filter: 'brightness(0) invert(1)'}} href="/"><Image src={logoPic} width={40} height={40} /></Link>
                 <Dropdown title="Challengek" items={nepszavazasrol} rootTarget="/challengek/"></Dropdown>
                 <Dropdown title="Pontok" items={kampanyrol} rootTarget="/pontok/"></Dropdown>
                 <Dropdown title="Csapatok" items={csapatok} rootTarget="/csapatok/"></Dropdown>
+                <Link href='/csapatok/' style={{order: -1}}><button className={`${styles.hexButton} mobile-only hex-button`} >Csatlakozz egy<br/> csapathoz!</button></Link>
                 {/*<Link href="/hirek">Hírek</Link>*/} {/*TODO remove test when done */}
                 {/*<Dropdown title="Aktivistáknak" rootTarget="/aktivistaknak/"></Dropdown>*/}
             </nav>
             <nav className={styles.topBarEnd}>
                 {/*<Link style={{color: 'var(--main-yellow)'}} href="/aktivista-jelentkezes">Jelentkezz Aktivistának!</Link>*/}
-                <Link href='/csapatok/' target='_blank'><button className="hex-button" >Csatlakozz!</button></Link>
+                <Link href='/csapatok/'><button className='hex-button'>Csatlakozz!</button></Link>
             </nav>
         </div>    
     )

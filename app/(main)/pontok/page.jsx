@@ -7,7 +7,7 @@ export default async function CategoryHomePage() {
         <Breadcrumbs link="/pontok/" category="Pontok" />
         <h1>Pontok</h1>
         <br />
-        <div class="feature" style={{marginTop: '2em'}}>
+        <div class="feature" style={{margin: '2em 0'}}>
             <table id="ponttabla">
                 <thead>
                     <tr>
