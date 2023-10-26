@@ -61,7 +61,7 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr auto;
     padding: 2.5em 1em 3em;
-    color: black;
+    color: white;
     background-color: var(--main-yellow);
     row-gap: 2.5em;
 }
@@ -77,7 +77,7 @@ footer .hex-button {
     clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
     height: 2.4em;
     color: var(--main-yellow);
-    background-color: black;
+    background-color: white;
 }
 
 footer #footer-social {
@@ -484,4 +484,32 @@ hr.topLine {
   .mobile-only {
     display: none !important;
   }
+}
+
+/** ponttabla */
+
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+tbody th:not([colspan]) {
+  text-align: start;
+}
+
+thead {
+  background: var(--main-red);
+  color: white;
+}
+
+tbody [colspan] {
+  background: lightgray;
+}
+
+tbody th span {
+  font-weight: normal;
 }

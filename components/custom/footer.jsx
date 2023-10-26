@@ -10,24 +10,25 @@ import { faSquare } from '@fortawesome/free-solid-svg-icons'
 import Image from 'next/image';
 import ahangLogo from '../../public/ahang_logo.png';
 import edfLogo from '../../public/edf_logo.png';
-import eleveLogo from '../../public/eleve_logo.png';
+import HetIgenLogo from '../../public/15-removebg-preview.png';
 
 export default function Footer() {
     return (
         <footer>
             {/*<link rel="stylesheet" href="https://ahangcdn.s3-eu-central-1.amazonaws.com/hetigen.css"></link>*/}
             <div id="projekt-infok">
-                <h2>7IGEN Oktatási&nbsp;Népszavazás</h2>
-                <div style={{display: "flex", gap: "10px"}}>
+                <h2>7IGEN Verseny</h2>
+                <div style={{display: "flex", gap: "10px", filter: 'brightness(0%) invert(1)'}}>
+                    <Link href="https://7igen.hu" target="_blank"><Image src={HetIgenLogo} alt="7IGEN Oktatási Népszavazás" /></Link>
                     <Link href="https://facebook.com/egysegesdiakfront" target="_blank"><Image src={edfLogo} alt="Egyseges Diakfront Logo" /></Link> 
-                    <Link href="https://ahang.hu" target="_blank"><Image src={ahangLogo} alt="aHang Logo" /></Link>
-                    <Link href="https://eleve.hu" target="_blank"><Image src={eleveLogo} alt="ELEVE Logo" /></Link>
+                    {/*<Link href="https://ahang.hu" target="_blank"><Image src={ahangLogo} alt="aHang Logo" /></Link>
+                    <Link href="https://eleve.hu" target="_blank"><Image src={eleveLogo} alt="ELEVE Logo" /></Link>*/}
                 </div>
             </div>
             <div id="tamogato-szervezetek">
-                <h3>Támogató szervezetek</h3>
+                <h3>{/*Támogató szervezetek*/}</h3>
                 <div className="tamogato-logok">
-                    <div><Link href="https://civilbazis.hu/" target="_blank"></Link></div>
+                    {/*<div><Link href="https://civilbazis.hu/" target="_blank"></Link></div>
                     <div><Link href="https://szamoljukegyutt.hu/" target="_blank"></Link></div>
                     <div><Link href="https://www.facebook.com/egyseges.szuloi.front.Szeged/" target="_blank"></Link></div>
                     <div><Link href="https://tasz.hu" target="_blank"></Link></div>
@@ -43,16 +44,16 @@ export default function Footer() {
                     <div><Link href="https://hivatlanul.com/" target="_blank"></Link></div>
                     <div><Link href="https://facebook.com/pedagogusegyseg/" target="_blank"></Link></div>
                     <div><Link href="https://www.amnesty.hu/" target="_blank"></Link></div>
-                    <div><Link href="https://www.cka.hu/" target="_blank"></Link></div>
+                <div><Link href="https://www.cka.hu/" target="_blank"></Link></div>*/}
                 </div>
             </div>
             <div id="footer-bottom" className="grid-centered-row">
                 <div id="footer-social">
                     <Link href="https://facebook.com/7igenesnepszavazas" target="_blank"><FontAwesomeIcon icon={faFacebook} /></Link>
-                    <Link href="https://www.instagram.com/explore/tags/7igen" target="_blank"><FontAwesomeIcon icon={faInstagram} /></Link>
-                    <Link href="https://youtube.com/aHangvideo" target="_blank"><FontAwesomeIcon icon={faYoutube} /></Link>
+                    <Link href="https://www.instagram.com/explore/tags/7igenfecske" target="_blank"><FontAwesomeIcon icon={faInstagram} /></Link>
+                    <Link href="https://www.instagram.com/explore/tags/7igengolya" target="_blank"><FontAwesomeIcon icon={faInstagram} /></Link>
                 </div>
-                <span id="footer-legal"><Link href="/kampanyrol/adatvedelem" target="_blank">Adatvédelmi nyilatkozat</Link><span> | © 2023 | </span><Link href="/sutitajekoztato">Sütitájékozató</Link></span>
+                <span id="footer-legal"><Link href="/kampanyrol/adatvedelem" target="_blank">Adatvédelmi nyilatkozat</Link> | © 2023</span>
                 <Link href="/rolunk"><button className="hex-button" >Rólunk</button></Link>
             </div>
         </footer>

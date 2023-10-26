@@ -55,12 +55,12 @@ export default async function TopBar() {
 
     csapatok.push( {
         name: "Fecske csapat",
-        description: "A csapat mottója",
+        description: "",
         target: "/csapatok/fecske"
     },
     {
         name: "Gólya csapat",
-        description: "A csapat mottója",
+        description: "",
         target: "/csapatok/golya"
     } )
 
@@ -96,7 +96,7 @@ export default async function TopBar() {
                 <div className="mobile-only">
                     <HamburgerMenu children={mobileMenuItems} />
                 </div>
-                {/*<Link className={styles.logo} href="/"><Image src={logoPic} width={40} height={40} /></Link>*/}
+                <Link className={styles.logo} style={{filter: 'brightness(0) invert(1)'}} href="/"><Image src={logoPic} width={40} height={40} /></Link>
                 <Dropdown title="Challengek" items={nepszavazasrol} rootTarget="/challengek/"></Dropdown>
                 <Dropdown title="Pontok" items={kampanyrol} rootTarget="/pontok/"></Dropdown>
                 <Dropdown title="Csapatok" items={csapatok} rootTarget="/csapatok/"></Dropdown>
