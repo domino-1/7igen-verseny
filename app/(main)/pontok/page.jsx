@@ -118,6 +118,14 @@ export default async function CategoryHomePage() {
                         <td></td>
                     </tr>
                     <tr>
+                        <th colspan="3">Special</th>
+                    </tr>
+                    <tr>
+                        <td>Záró-challenge (10.30)</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
                         <th colspan="3">Összesítés</th>
                     </tr>
                     <tr>
