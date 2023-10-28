@@ -10,7 +10,7 @@ export default async function CategoryHomePage() {
         <br />
         <section class="feature" style={{marginTop: '2em'}}>
         <h2>Szavazás</h2>
-            <Link href="https://forms.gle/TvwhqueZ8XYzfJdb8"><div className="challengeItem">
+            <Link href="https://forms.gle/TvwhqueZ8XYzfJdb8" target="_blank"><div className="challengeItem">
             <div><b>Szavazz!</b> - 1p</div>
             <ul>
                 <li>Élőben: Szelfi szavazás után</li>
@@ -20,7 +20,7 @@ export default async function CategoryHomePage() {
             </div></Link>
             <br />
 
-            <Link href="https://forms.gle/crR4HAEU4RCVvUAU8"><div className="challengeItem">
+            <Link href="https://forms.gle/crR4HAEU4RCVvUAU8" target="_blank"><div className="challengeItem">
             <div><b>Hozz még egy szavazót!</b> - 2p (1p neki a "Szavazz!"-ért!) - Ismételhető</div>
             <ul>
                 <li>Élőben: Szelfizzetek együtt szavazás után!</li>
@@ -30,7 +30,7 @@ export default async function CategoryHomePage() {
             </div></Link>
             <br />
 
-            <Link href="https://forms.gle/wRHPVMmuiRc11Jkr8"><div className="challengeItem">
+            <Link href="https://forms.gle/wRHPVMmuiRc11Jkr8" target="_blank"><div className="challengeItem">
             <div><b>Első szavazó</b> - 3p</div>
             <ul>
                 <li>Élőben: Fotózkodj az Első Szavazó matricáddal</li>
@@ -38,7 +38,7 @@ export default async function CategoryHomePage() {
             </div></Link>
             <br />
 
-            <Link href="https://forms.gle/atW752rQf7h8wMG89"><div className="challengeItem">
+            <Link href="https://forms.gle/atW752rQf7h8wMG89" target="_blank"><div className="challengeItem">
             <div><b>Sulitúra</b> - 7p</div>
             <ul>
                 <li>Érjetek el minél több iskolát! A csapatodnak annyiszor 7 pont jár, ahány különböző iskolából vannak tagjai.</li>
@@ -50,7 +50,7 @@ export default async function CategoryHomePage() {
 
         <section class="feature" style={{marginTop: '2em'}}>
         <h2>Toborzós</h2>
-            <Link href="https://forms.gle/LmrxTpWAwAGgdXSz7"><div className="challengeItem">
+            <Link href="https://forms.gle/LmrxTpWAwAGgdXSz7" target="_blank"><div className="challengeItem">
             <div><b>Toborozz valakit a csapatodba!</b> - 1p - Ismételhető</div>
             <ul>
                 <li>Győzz meg valakit, hogy lépjen be a csapatodba!</li>
@@ -116,17 +116,17 @@ export default async function CategoryHomePage() {
         <section class="feature" style={{marginTop: '2em'}}>
         <h2>Kvíz</h2>
         <div>Itt válaszolni kell a kérdésekre pontért</div>
-            <Link href="https://forms.gle/XumvS8LkskskDJNP9"><div className="challengeItem">
+            <Link href="https://forms.gle/XumvS8LkskskDJNP9" target="_blank"><div className="challengeItem">
             <div><b>Melyik a két legtávolabbi szavazó állomás?</b> - 2p</div>
             </div></Link>
             <br />
 
-            <Link href="https://forms.gle/F5RB5zyhGdxfNj5p7"><div className="challengeItem">
+            <Link href="https://forms.gle/F5RB5zyhGdxfNj5p7" target="_blank"><div className="challengeItem">
             <div><b>Melyik a legnépszerűbb vidéki szavazó állomás?</b> - 2p</div>
             </div></Link>
             <br />
 
-            <Link href="https://forms.gle/aXzt2hWq2qx1s6T18"><div className="challengeItem">
+            <Link href="https://forms.gle/aXzt2hWq2qx1s6T18" target="_blank"><div className="challengeItem">
             <div><b>Melyik a legnépszerűbb budapesti szavazó állomás?</b> - 2p</div>
             </div></Link>
             <br />
