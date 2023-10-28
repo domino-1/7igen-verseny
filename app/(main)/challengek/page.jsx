@@ -10,52 +10,52 @@ export default async function CategoryHomePage() {
         <br />
         <section class="feature" style={{marginTop: '2em'}}>
         <h2>Szavazás</h2>
-            <Link href="https://forms.gle/TvwhqueZ8XYzfJdb8" className="challengeItem">
+            <Link href="https://forms.gle/TvwhqueZ8XYzfJdb8"><div className="challengeItem">
             <div><b>Szavazz!</b> - 1p</div>
             <ul>
                 <li>Élőben: Szelfi szavazás után</li>
                 <li>Online: Oszd meg, hogy szavaztál! A megosztott posztról csinálj egy screenshotot és küld be, vagy küld be a poszt linkjét</li>
                 <li>FONTOS: Tilos lefotózni a szavazólapot, vagy más szavazókat</li>
             </ul>
-            </Link>
+            </div></Link>
             <br />
 
-            <Link href="https://forms.gle/crR4HAEU4RCVvUAU8" className="challengeItem">
+            <Link href="https://forms.gle/crR4HAEU4RCVvUAU8"><div className="challengeItem">
             <div><b>Hozz még egy szavazót!</b> - 2p (1p neki a "Szavazz!"-ért!) - Ismételhető</div>
             <ul>
                 <li>Élőben: Szelfizzetek együtt szavazás után!</li>
                 <li>Online: Osszátok meg mindketten, hogy szavaztatok! A megosztott posztrokról csináljatok egy screenshotot és küld be, vagy küld be a posztok linkjét</li>
                 <li>FONTOS: Tilos lefotózni a szavazólapot, vagy más szavazókat akik nem ti vagytok</li>
             </ul>
-            </Link>
+            </div></Link>
             <br />
 
-            <Link href="https://forms.gle/wRHPVMmuiRc11Jkr8" className="challengeItem">
+            <Link href="https://forms.gle/wRHPVMmuiRc11Jkr8"><div className="challengeItem">
             <div><b>Első szavazó</b> - 3p</div>
             <ul>
                 <li>Élőben: Fotózkodj az Első Szavazó matricáddal</li>
             </ul>
-            </Link>
+            </div></Link>
             <br />
 
-            <Link href="https://forms.gle/atW752rQf7h8wMG89" className="challengeItem">
+            <Link href="https://forms.gle/atW752rQf7h8wMG89"><div className="challengeItem">
             <div><b>Sulitúra</b> - 7p</div>
             <ul>
                 <li>Érjetek el minél több iskolát! A csapatodnak annyiszor 7 pont jár, ahány különböző iskolából vannak tagjai.</li>
                 <li>Online és Élőben: Ugyan az a rendszer mint a "Hozz még egy szavazót!"nál</li>
             </ul>
-            </Link>
+            </div></Link>
             <br />
         </section>
 
         <section class="feature" style={{marginTop: '2em'}}>
         <h2>Toborzós</h2>
-            <Link href="https://forms.gle/LmrxTpWAwAGgdXSz7" className="challengeItem">
+            <Link href="https://forms.gle/LmrxTpWAwAGgdXSz7"><div className="challengeItem">
             <div><b>Toborozz valakit a csapatodba!</b> - 1p - Ismételhető</div>
             <ul>
                 <li>Győzz meg valakit, hogy lépjen be a csapatodba!</li>
             </ul>
-            </Link>
+            </div></Link>
             <br />
         </section>
 
@@ -116,19 +116,19 @@ export default async function CategoryHomePage() {
         <section class="feature" style={{marginTop: '2em'}}>
         <h2>Kvíz</h2>
         <div>Itt válaszolni kell a kérdésekre pontért</div>
-            <Link href="https://forms.gle/XumvS8LkskskDJNP9" className="challengeItem">
+            <Link href="https://forms.gle/XumvS8LkskskDJNP9"><div className="challengeItem">
             <div><b>Melyik a két legtávolabbi szavazó állomás?</b> - 2p</div>
-            </Link>
+            </div></Link>
             <br />
 
-            <Link href="https://forms.gle/F5RB5zyhGdxfNj5p7" className="challengeItem">
+            <Link href="https://forms.gle/F5RB5zyhGdxfNj5p7"><div className="challengeItem">
             <div><b>Melyik a legnépszerűbb vidéki szavazó állomás?</b> - 2p</div>
-            </Link>
+            </div></Link>
             <br />
 
-            <Link href="https://forms.gle/aXzt2hWq2qx1s6T18" className="challengeItem">
+            <Link href="https://forms.gle/aXzt2hWq2qx1s6T18"><div className="challengeItem">
             <div><b>Melyik a legnépszerűbb budapesti szavazó állomás?</b> - 2p</div>
-            </Link>
+            </div></Link>
             <br />
         </section>
 

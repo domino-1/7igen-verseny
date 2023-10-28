@@ -516,6 +516,7 @@ tbody th span {
 
 a {
   color: var(--main-red);
+  text-decoration: none;
 }
 
 #ponttabla {
