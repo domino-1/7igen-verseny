@@ -30,14 +30,12 @@ export default async function CategoryHomePage() {
                     </tr>
                     <tr>
                         <th>Hozz még egy szavazót!
-                            <br /><span>2p (+1p neki a Szavazz-ér) - Ismételhető</span>
                         </th>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
                         <th>Sulitúra
-                            <br /><span>5p</span>
                         </th>
                         <td></td>
                         <td></td>
@@ -56,10 +54,15 @@ export default async function CategoryHomePage() {
                         <td></td>
                     </tr>
                     <tr>
+                        <td>Passzív challengek (összesítés)</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
                         <th colspan="3">Szavazó állomások</th>
                     </tr>
                     <tr>
-                        <th>Látogass meg (X) szavazó állomást és szelfizz ott!</th>
+                        <th>Látogass meg 3 szavazó állomást és szelfizz ott!</th>
                         <td></td>
                         <td></td>
                     </tr>
@@ -89,25 +92,36 @@ export default async function CategoryHomePage() {
                         <td></td>
                     </tr>
                     <tr>
-                        <th colspan="3">Goofy</th>
+                        <th colspan="3">Vicces</th>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
+                        <td>Budapest Bingó (normál)</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td></td>
+                        <td>Budapest Bingó (nehéz)</td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
+                        <td>Érvelős</td>
                         <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">Vicces</th>
+                    </tr>
+                    <tr>
+                        <td>Kvízkérdések</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">Összesítés</th>
+                    </tr>
+                    <tr>
+                        <td>Összes</td>
                         <td></td>
                         <td></td>
                     </tr>

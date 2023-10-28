@@ -57,59 +57,90 @@ export default async function CategoryHomePage() {
             </ul>
             </div></Link>
             <br />
+            <div className="challengeItem">
+            <div><b>Érjetek el 10 tagot!</b> - 10p - Automatikusan ellenőrzött</div>
+            <ul>
+                <li>Győzzetek meg 10 embert, hogy lépjenek be a csapat!</li>
+                <li>Ehhez a challenghez nem kell semmit se beadni, passzívan működik!</li>
+            </ul>
+            </div>
+            <br />
+             <div className="challengeItem">
+            <div><b>Érjetek el 20 tagot!</b> - 20p - Automatikusan ellenőrzött</div>
+            <ul>
+                <li>Győzzetek meg 20 embert, hogy lépjenek be a csapat!</li>
+                <li>Ehhez a challenghez nem kell semmit se beadni, passzívan működik!</li>
+            </ul>
+            </div>
+            <br />
+            <div className="challengeItem">
+            <div><b>Érjetek el 50 tagot!</b> - 50p - Automatikusan ellenőrzött</div>
+            <ul>
+                <li>Győzzetek meg 50 embert, hogy lépjenek be a csapat!</li>
+                <li>Ehhez a challenghez nem kell semmit se beadni, passzívan működik!</li>
+            </ul>
+            </div>
+            <br />
+            <div className="challengeItem">
+            <div><b>Érjetek el 100 tagot!</b> - 100p - Automatikusan ellenőrzött</div>
+            <ul>
+                <li>Győzzetek meg 100 embert, hogy lépjenek be a csapat!</li>
+                <li>Ehhez a challenghez nem kell semmit se beadni, passzívan működik!</li>
+            </ul>
+            </div>
+            <br />
         </section>
 
         <section class="feature" style={{marginTop: '2em'}}>
         <h2>Szavazó állomások</h2>
-            <span>Ezek a feladatok várhatóan 10.28 délután nyílnak meg</span>
 
-            <div className="challengeItem">
+            <Link href="https://forms.gle/G8p1mdgeLPkSKqiH6" target="_blank"><div className="challengeItem">
             <div><b>Látogass meg 3 szavazó állomást és szelfizz ott!</b> - 5p</div>
             <ul>
                 <li>FONTOS: Figyelj oda, hogy ne legyenek felismerhetőek az emberek a képen! Tilos lefotózni a szavazólapot és más szavazókat</li>
                 <li>Ha megkérnek, hogy ne fotózzd le őket, akkor ne fotózzd le őket!</li>
             </ul>
-            </div>
+            </div></Link>
             <br />
 
-            <div className="challengeItem">
+            <Link href="https://forms.gle/PyaAyt1gnhg8CzubA" target="_blank"><div className="challengeItem">
             <div><b>CSAPATOS: Gyűjtsetek össze egy-egy képet Budapest minden szavazó állomásáról </b> - 20p</div>
             <ul>
                 <li>Dolgozzatok össze csapattársaiddal!</li>
             </ul>
-            </div>
+            </div></Link>
             <br />
 
-            <div className="challengeItem">
+            <Link href="https://forms.gle/74m7QySLr4M8uG4n6" target="_blank"><div className="challengeItem">
             <div><b>CSAPATOS: Gyűjtsetek össze egy-egy képet Pest megye minden szavazó állomásáról </b> - 20p</div>
             <ul>
                 <li>Dolgozzatok össze csapattársaiddal!</li>
             </ul>
-            </div>
+            </div></Link>
             <br />
 
-            <div className="challengeItem">
+            <Link href="https://forms.gle/hbGMicBu2LLf2EvV6" target="_blank"><div className="challengeItem">
             <div><b>CSAPATOS: Gyűjtsetek össze egy-egy képet legalább 3 megye szavazó állomásairól </b> - 20p - Ismételhető</div>
             <ul>
                 <li>Dolgozzatok össze csapattársaiddal!</li>
             </ul>
-            </div>
+            </div></Link>
             <br />
 
-            <div className="challengeItem">
-            <div><b>CSAPATOS: Gyűjtsetek össze minden megyéből egy képet egy szavzó állomásról </b> - 100p</div>
+            <Link href="https://forms.gle/5ACptgZD6zPS9qjv8" target="_blank"><div className="challengeItem">
+            <div><b>CSAPATOS: Gyűjtsetek össze minden megyéből egy képet egy szavzó állomásról </b> - 200p</div>
             <ul>
                 <li>Dolgozzatok össze csapattársaiddal!</li>
             </ul>
-            </div>
+            </div></Link>
             <br />
 
-            <div className="challengeItem">
-            <div><b>CSAPATOS: Gyűjtsetek össze egy-egy képet legalább 60 szavazó állomásról! </b> - 200p</div>
+            <Link href="https://forms.gle/abrrtqtSPTZheuY89" target="_blank"><div className="challengeItem">
+            <div><b>CSAPATOS: Gyűjtsetek össze egy-egy képet legalább 60 szavazó állomásról! </b> - 500p</div>
             <ul>
                 <li>Dolgozzatok össze csapattársaiddal!</li>
             </ul>
-            </div>
+            </div></Link>
             <br />
         </section>
 
@@ -134,7 +165,7 @@ export default async function CategoryHomePage() {
 
         <section class="feature" style={{marginTop: '2em'}}>
         <h2>Vicces</h2>
-            <span>Ezek a feladatok várhatóan 10.28 délután nyílnak meg</span>
+            <span>Ezek a feladatok várhatóan 10.29 délután nyílnak meg</span>
 
             <div className="challengeItem">
             <div><b>Budapest Bingó (normál)</b> - 7p - Ismételhető</div>
