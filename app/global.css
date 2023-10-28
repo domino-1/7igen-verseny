@@ -540,3 +540,9 @@ main {
 .bodyContent section {
   margin: 0 15px;
 }
+
+.challengeItem {
+  padding: 1em;
+  background: #efefef;
+  box-shadow: 0 0 5px darkgray;
+}
