@@ -1,5 +1,6 @@
 import Breadcrumbs from "../../../components/custom/breadcrumbs";
 import ParsedHtml from "../../../components/custom/parsed-html";
+import Link from "next/link";
 
 export default async function CategoryHomePage() {
 
