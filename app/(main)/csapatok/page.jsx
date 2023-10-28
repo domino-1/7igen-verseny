@@ -12,7 +12,7 @@ export default async function CategoryHomePage() {
         <Link href="https://forms.gle/EcMJa9pGb5TVQkjs8" target="_blank"><div className="challengeItem">
             <div><h2>Jelentkezz a Gólya csapatba!</h2></div>
             </div></Link>
-
+            <br /><br />
             <Link href="https://forms.gle/U3FZL9wtBc9oe8My8" target="_blank"><div className="challengeItem">
             <div><h2>Jelentkezz a Fecske csapatba!</h2></div>
             </div></Link>
