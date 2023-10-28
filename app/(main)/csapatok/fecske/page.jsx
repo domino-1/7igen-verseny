@@ -8,7 +8,9 @@ export default async function CategoryHomePage() {
         <h1>Fecske csapat</h1>
         <br />
         <div class="feature" style={{marginTop: '2em'}}>
-            Lorem ipsum
+        <Link href="https://forms.gle/U3FZL9wtBc9oe8My8" target="_blank"><div className="challengeItem">
+            <div><h2>Jelentkezz a Fecske csapatba!</h2></div>
+            </div></Link>
         </div>
     </>)
 }
