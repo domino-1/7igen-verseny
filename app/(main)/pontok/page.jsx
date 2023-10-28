@@ -110,7 +110,7 @@ export default async function CategoryHomePage() {
                         <td></td>
                     </tr>
                     <tr>
-                        <th colspan="3">Vicces</th>
+                        <th colspan="3">Kvíz</th>
                     </tr>
                     <tr>
                         <td>Kvízkérdések</td>
